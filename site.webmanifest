@@ -1,12 +1,12 @@
 {
-  "name": "blog",
-  "short_name": "兔兔作品集",
+  "name": "草木一秋的博客",
+  "short_name": "草木一秋",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
-  "description": "技术博客",
+  "description": "技术博客，分享遇到的各种坑及解决方案~",
   "icons": [
     {
       "src": "/favicon/favicon-192x192.png",
