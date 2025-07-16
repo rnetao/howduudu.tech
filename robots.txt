@@ -158,4 +158,4 @@ Disallow: /
 User-agent: *
 Disallow:
 
-Sitemap: https://howduudu.site/sitemap-index.xml
+Sitemap: https://howduudu.tech/sitemap-index.xml
