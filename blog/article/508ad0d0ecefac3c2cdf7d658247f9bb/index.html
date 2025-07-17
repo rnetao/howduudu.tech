@@ -1,4 +1,18 @@
-<!DOCTYPE html><html lang="zh-CN" data-astro-transition-scope="astro-tyfwoq7n-2"> <head><title>lua的string内置库-HDUD</title><meta charset="UTF-8"><link rel="canonical" href="https://howduudu.tech/blog/article/508ad0d0ecefac3c2cdf7d658247f9bb/"><meta name="description" content="记录Python、JavaScript技术实践与个人成长的博客，分享实用教程、开发经验与学习笔记，热爱开源热爱分享！"><meta name="robots" content="index, follow"><meta property="og:title" content="lua的string内置库"><meta property="og:type" content="article"><meta property="og:image" content="/og-image/508ad0d0ecefac3c2cdf7d658247f9bb.png"><meta property="og:url" content="https://howduudu.tech/blog/article/508ad0d0ecefac3c2cdf7d658247f9bb/"><meta property="article:published_time" content="Wed Apr 13 2022 07:16:51 GMT+0800 (China Standard Time)"><meta property="article:author" content="草木一秋"><meta property="article:tag" content="Lua"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="/favicon/favicon-512x512.png"><link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/favicon/favicon-180x180.png"><link rel="manifest" href="/site.webmanifest"><link rel="sitemap" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="msapplication-TileColor" content="#333333"><meta name="theme-color" content="#fdfaf6"><meta name="author" content="草木一秋"><meta name="email" content="it17621000@163.com"><script data-astro-rerun>
+<!DOCTYPE html><html lang="zh-CN" data-astro-transition-scope="astro-tyfwoq7n-2"> <head><title>lua的string内置库-HDUD</title><meta charset="UTF-8"><link rel="canonical" href="https://howduudu.tech/blog/article/508ad0d0ecefac3c2cdf7d658247f9bb/"><meta name="description" content="## byte
+
+**string.byte(s [, i [, j]])**
+**s:byte([i [, j]])**
+
+返回字符串指定字符下标的ASCII码，i为起点下标（默认为1），j为终点下标，如：
+
+```lua
+> string.byte(&#34;ABCDE&#34;, 2, 5)
+66	67	68	69
+-- 返回的是BCDE的ASCII码，可通过结构赋值赋予其它变量
+```
+
+## char
+"><meta name="robots" content="index, follow"><meta property="og:title" content="lua的string内置库"><meta property="og:type" content="article"><meta property="og:image" content="/og-image/508ad0d0ecefac3c2cdf7d658247f9bb.png"><meta property="og:url" content="https://howduudu.tech/blog/article/508ad0d0ecefac3c2cdf7d658247f9bb/"><meta property="article:published_time" content="Wed Apr 13 2022 07:16:51 GMT+0800 (China Standard Time)"><meta property="article:author" content="草木一秋"><meta property="article:tag" content="Lua"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="/favicon/favicon-512x512.png"><link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/favicon/favicon-180x180.png"><link rel="manifest" href="/site.webmanifest"><link rel="sitemap" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="msapplication-TileColor" content="#333333"><meta name="theme-color" content="#fdfaf6"><meta name="author" content="草木一秋"><meta name="email" content="it17621000@163.com"><script data-astro-rerun>
 		  (() => {
 			  const getThemePreference = () => {
 				  if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {

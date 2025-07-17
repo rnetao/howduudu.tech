@@ -1,4 +1,18 @@
-<!DOCTYPE html><html lang="zh-CN" data-astro-transition-scope="astro-tyfwoq7n-2"> <head><title>Scrapy阅读笔记-HDUD</title><meta charset="UTF-8"><link rel="canonical" href="https://howduudu.tech/blog/article/b1e86b504e9deae4419ac1905b4ec69a/"><meta name="description" content="记录Python、JavaScript技术实践与个人成长的博客，分享实用教程、开发经验与学习笔记，热爱开源热爱分享！"><meta name="robots" content="index, follow"><meta property="og:title" content="Scrapy阅读笔记"><meta property="og:type" content="article"><meta property="og:image" content="/og-image/b1e86b504e9deae4419ac1905b4ec69a.png"><meta property="og:url" content="https://howduudu.tech/blog/article/b1e86b504e9deae4419ac1905b4ec69a/"><meta property="article:published_time" content="Mon May 01 2017 15:27:36 GMT+0800 (China Standard Time)"><meta property="article:author" content="草木一秋"><meta property="article:tag" content="Python"><meta property="article:tag" content="Scrapy"><meta property="article:tag" content="爬虫"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="/favicon/favicon-512x512.png"><link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/favicon/favicon-180x180.png"><link rel="manifest" href="/site.webmanifest"><link rel="sitemap" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="msapplication-TileColor" content="#333333"><meta name="theme-color" content="#fdfaf6"><meta name="author" content="草木一秋"><meta name="email" content="it17621000@163.com"><script data-astro-rerun>
+<!DOCTYPE html><html lang="zh-CN" data-astro-transition-scope="astro-tyfwoq7n-2"> <head><title>Scrapy阅读笔记-HDUD</title><meta charset="UTF-8"><link rel="canonical" href="https://howduudu.tech/blog/article/b1e86b504e9deae4419ac1905b4ec69a/"><meta name="description" content="# 说明
+
+> 阅读[Scrapy官网](https://docs.scrapy.org/en/latest/index.html).
+
+# 实战既是王道
+
+## 创建项目
+
+`scrapy startproject tutorial`
+
+```python
+├── scrapy.cfg            #部署用的配置文件
+└── tutorial
+    ├── __init__.py
+ "><meta name="robots" content="index, follow"><meta property="og:title" content="Scrapy阅读笔记"><meta property="og:type" content="article"><meta property="og:image" content="/og-image/b1e86b504e9deae4419ac1905b4ec69a.png"><meta property="og:url" content="https://howduudu.tech/blog/article/b1e86b504e9deae4419ac1905b4ec69a/"><meta property="article:published_time" content="Mon May 01 2017 15:27:36 GMT+0800 (China Standard Time)"><meta property="article:author" content="草木一秋"><meta property="article:tag" content="Python"><meta property="article:tag" content="Scrapy"><meta property="article:tag" content="爬虫"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="/favicon/favicon-512x512.png"><link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/favicon/favicon-180x180.png"><link rel="manifest" href="/site.webmanifest"><link rel="sitemap" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="msapplication-TileColor" content="#333333"><meta name="theme-color" content="#fdfaf6"><meta name="author" content="草木一秋"><meta name="email" content="it17621000@163.com"><script data-astro-rerun>
 		  (() => {
 			  const getThemePreference = () => {
 				  if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
