@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>HOWDUUDU（好读优读）</title><description>记录Python、JavaScript技术实践与个人成长的博客，分享实用教程、开发经验与学习笔记，热爱开源热爱分享！</description><link>https://howduudu.tech/</link><item><title>一道编程题的思考</title><link>https://howduudu.tech/blog/article/1ed3e544bc2149daf20893e8caf9d81f/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/1ed3e544bc2149daf20893e8caf9d81f/</guid><description>昨天碰到了一道编程题，这道题目印象还挺深刻，记得还是读大学的时候，室友都已入睡自己还在熬夜写C++代码，当时AC的题目与这道题目类似(过去太久了记得是写个计算器)，题目放在代码文件里删了，大概就是输入一个字符串到程序里，该程序模拟计算器解析字符串并进行加、减、乘、除运算。
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>HOWDUUDU（好读优读）</title><description>记录Python、JavaScript技术实践与个人成长的博客，分享实用教程、开发经验与学习笔记，热爱开源热爱分享！</description><link>https://howduudu.tech/</link><item><title>补环境框架:sdenv版本更新V0.2.0</title><link>https://howduudu.tech/blog/article/b5a7e0aa915e4a508d1473d5d5da1274/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/b5a7e0aa915e4a508d1473d5d5da1274/</guid><description>补环境框架sdenv发布V0.2.0版本</description><pubDate>Tue, 16 Apr 2024 11:07:32 GMT</pubDate></item><item><title>一道编程题的思考</title><link>https://howduudu.tech/blog/article/1ed3e544bc2149daf20893e8caf9d81f/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/1ed3e544bc2149daf20893e8caf9d81f/</guid><description>昨天碰到了一道编程题，这道题目印象还挺深刻，记得还是读大学的时候，室友都已入睡自己还在熬夜写C++代码，当时AC的题目与这道题目类似(过去太久了记得是写个计算器)，题目放在代码文件里删了，大概就是输入一个字符串到程序里，该程序模拟计算器解析字符串并进行加、减、乘、除运算。
 
-　　昨天自己写的代码是通过三次循环，第一次循环将字符串解析成数字和操作符存入数组，第二次循环遍历数组处理乘法和除法运算，第三</description><pubDate>Thu, 11 Apr 2024 10:44:45 GMT</pubDate></item><item><title>补环境-document.all的c++方案</title><link>https://howduudu.tech/blog/article/50a43fa903793969da806afdce2d70b3/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/50a43fa903793969da806afdce2d70b3/</guid><description>一般node中模拟浏览器运行环境都可以在node中用JavaScript代码解决，唯独document.all比较特殊，document.all是无法通过纯JavaScript方案解决的，因此document.all也是很多工程师自己配置补环境框架遇到的一道坎，而且网络上基本搜不到这一块的专业文章或者教程。</description><pubDate>Tue, 12 Dec 2023 00:52:58 GMT</pubDate></item><item><title>瑞数vmp-动态代码生成原理</title><link>https://howduudu.tech/blog/article/95f60638eaa0647bcf327fb4f2c2887c/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/95f60638eaa0647bcf327fb4f2c2887c/</guid><description>刚开始就是很好奇，为啥给了一串字符串和一个数字就可以动态生成每次都不一样却都能正常运行的文本？为啥代码一格式化就会执行进入死循环？`window.$_ts`的值在动态代码生成过程中会越来越多值，它的作用是什么？动态代码中的循环加判断又是怎么生成的？又为何删除了源码的debugger后代码就运行异常？
+　　昨天自己写的代码是通过三次循环，第一次循环将字符串解析成数字和操作符存入数组，第二次循环遍历数组处理乘法和除法运算，第三</description><pubDate>Thu, 11 Apr 2024 10:44:45 GMT</pubDate></item><item><title>纯算逆向：rs-reverse版本更新v1.7.1</title><link>https://howduudu.tech/blog/article/71066bef99d6bac49691668ab431fa73/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/71066bef99d6bac49691668ab431fa73/</guid><description>瑞数纯算逆向项目rs-reverse V1.7.1版本发布</description><pubDate>Wed, 10 Apr 2024 19:18:37 GMT</pubDate></item><item><title>纯算逆向：rs-reverse版本更新v1.6.0</title><link>https://howduudu.tech/blog/article/20d2e7455c76700ac9d441e05c0bf62f/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/20d2e7455c76700ac9d441e05c0bf62f/</guid><description>瑞数纯算逆向项目rs-reverse V1.6.0版本发布</description><pubDate>Thu, 28 Mar 2024 19:29:24 GMT</pubDate></item><item><title>补环境框架：document.all的c++方案(一)</title><link>https://howduudu.tech/blog/article/00bb5f4a997c39858e25fa962e8cd5b8/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/00bb5f4a997c39858e25fa962e8cd5b8/</guid><description>使用不环境方案做爬虫项目时，document.all的检测一直是比较不容易通过的，该篇博文讨论用C++插件的方式过document.all的检测</description><pubDate>Wed, 13 Mar 2024 18:39:38 GMT</pubDate></item><item><title>补环境框架：document.all的c++方案(二)</title><link>https://howduudu.tech/blog/article/de942bdea377f7f3ce6878fc04a8c76c/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/de942bdea377f7f3ce6878fc04a8c76c/</guid><description>使用不环境方案做爬虫项目时，document.all的检测一直是比较不容易通过的，该篇博文讨论用C++插件的方式过document.all的检测</description><pubDate>Wed, 13 Mar 2024 18:39:38 GMT</pubDate></item><item><title>纯算逆向：rs-reverse项目介绍与使用</title><link>https://howduudu.tech/blog/article/0a30428fa8cd6370c5e5a0a91c2ea4be/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/0a30428fa8cd6370c5e5a0a91c2ea4be/</guid><description>瑞数纯算逆向项目rs-reverse介绍与使用</description><pubDate>Wed, 13 Mar 2024 18:38:30 GMT</pubDate></item><item><title>补环境框架：sdenv与浏览器生成cookie的一致性验证</title><link>https://howduudu.tech/blog/article/9269aac48f459faada768f97fe6156d1/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/9269aac48f459faada768f97fe6156d1/</guid><description>反爬虫产品的反爬检测越来越高级，尤其是以瑞数vmp为代表的一类，我们用老式的技术已经很难做这一类网站的算法逆向，因为要花费的时间已经就劝退了很大一批开发人员，而且花了大量的时间最后仍旧无法完成逆向出算法的同学也大有人在。那么这个时候补环境框架的优势就很大的体现出来，那么github上有很多款补环境框架，不管补的齐不齐，就算最后产生了位数对的cookie，在使用该cookie时还是被检测到了！我们有</description><pubDate>Wed, 13 Mar 2024 02:53:58 GMT</pubDate></item><item><title>瑞数vmp-动态代码生成原理</title><link>https://howduudu.tech/blog/article/95f60638eaa0647bcf327fb4f2c2887c/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/95f60638eaa0647bcf327fb4f2c2887c/</guid><description>刚开始就是很好奇，为啥给了一串字符串和一个数字就可以动态生成每次都不一样却都能正常运行的文本？为啥代码一格式化就会执行进入死循环？`window.$_ts`的值在动态代码生成过程中会越来越多值，它的作用是什么？动态代码中的循环加判断又是怎么生成的？又为何删除了源码的debugger后代码就运行异常？
 
 带着好奇我直接把动态代码生成的逻辑逆向了，核心代码经过逆向后就只有大概300多行，代码整理成项目</description><pubDate>Thu, 30 Nov 2023 00:52:58 GMT</pubDate></item><item><title>瑞数vmp-代码格式化后无法正常运行原因分析</title><link>https://howduudu.tech/blog/article/420dc80bfb66280ddbb93d87864cadd1/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/420dc80bfb66280ddbb93d87864cadd1/</guid><description>## 问题
 
@@ -83,69 +83,4 @@ K哥文章：https://mp.weixin.qq.com/s/fIbPuNMs5FRADJE5MOZXgA
 
 网上有很多这方面的教程，中文的基本上都是这个抄袭那个抄来抄去，还云里雾里，因此做下记录，提供用法来源和使用示例
 
-可直接访问[ssh_config](http</description><pubDate>Thu, 21 Jul 2022 09:31:55 GMT</pubDate></item><item><title>nvim插件管理工具packer的使用</title><link>https://howduudu.tech/blog/article/6143d6a665537f665afe6c71a41a930e/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/6143d6a665537f665afe6c71a41a930e/</guid><description>[packer](https://github.com/wbthomason/packer.nvim)是一个功能强大且支持扩展的neovim插件管理工具，只要是基于neovim实现的ide全部是用packer来管理插件的，因此packer是学习nvim的必学插件。
-
-## packer自动安装
-
-packer是管理插件的插件，一般在init.vim或者init.lua中写入自动安装脚本，让nvim</description><pubDate>Fri, 13 May 2022 00:53:32 GMT</pubDate></item><item><title>JavaScript高级属性之Object</title><link>https://howduudu.tech/blog/article/9762fb861a9e19487c93ec474652b24d/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/9762fb861a9e19487c93ec474652b24d/</guid><description>## Object.getOwnPropertyDescriptor(obj, prop)
-
-用于获取对象属性的描述符（descriptor）的方法。描述符包括属性的可写性、可枚举性、可配置性等信息，该方法只返回对象其本身，不会获取原型链上的属性。
-
-### 入参
-
-* `obj`：要获取属性描述符的对象。
-* `prop`：要获取描述符的属性名。
-
-### 返回
-
-返回描述符（descripto</description><pubDate>Wed, 27 Apr 2022 15:59:11 GMT</pubDate></item><item><title>NeoVim-安装</title><link>https://howduudu.tech/blog/article/12480812c42021f5233cd2b060f66e69/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/12480812c42021f5233cd2b060f66e69/</guid><description>## 什么是NeoVim
-
-官方介绍如下：
-
-&gt; Neovim is a refactor, and sometimes redactor, in the tradition of Vim (which itself derives from Stevie). It is not a rewrite but a continuation and extension of Vim. Many clo</description><pubDate>Fri, 15 Apr 2022 23:50:32 GMT</pubDate></item><item><title>lua的math内置库</title><link>https://howduudu.tech/blog/article/5ee4322e90fc7bf9074350c3191b09ed/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/5ee4322e90fc7bf9074350c3191b09ed/</guid><description>math内置库用于数学计算，有如下常用方法：
-
-方法名 | 作用
------- | ----
-abs | 绝对值
-acos | 反余弦
-asin | 反正弦
-atan | 反正切
-cos | 余弦
-sin | 正弦
-tan | 正切
-ceil | 向上取整
-floor | 向下取整
-sqrt | 平方根
-deg | 弧度转角度
-rad | 角度转弧度
-huge | 无限大
-max | 最大值
-mi</description><pubDate>Wed, 13 Apr 2022 23:19:50 GMT</pubDate></item><item><title>lua的table内置库</title><link>https://howduudu.tech/blog/article/402558f593a11a8e2e3fa8020306089b/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/402558f593a11a8e2e3fa8020306089b/</guid><description>## concat
-
-**table.concat(table [, sep [, i [, j]]])**
-
-拼接table中的元素生成字符串，其中入参sep为拼接符，i为起点坐标，j为终点坐标
-
-## sort
-
-**table.sort(table [, comp])**
-
-table值排序，comp为对比方法
-
-## insert
-
-**table.insert(table, [pos,]</description><pubDate>Wed, 13 Apr 2022 23:19:03 GMT</pubDate></item><item><title>lua的string内置库</title><link>https://howduudu.tech/blog/article/508ad0d0ecefac3c2cdf7d658247f9bb/</link><guid isPermaLink="true">https://howduudu.tech/blog/article/508ad0d0ecefac3c2cdf7d658247f9bb/</guid><description>## byte
-
-**string.byte(s [, i [, j]])**
-**s:byte([i [, j]])**
-
-返回字符串指定字符下标的ASCII码，i为起点下标（默认为1），j为终点下标，如：
-
-```lua
-&gt; string.byte(&quot;ABCDE&quot;, 2, 5)
-66	67	68	69
--- 返回的是BCDE的ASCII码，可通过结构赋值赋予其它变量
-```
-
-## char
-</description><pubDate>Tue, 12 Apr 2022 23:16:51 GMT</pubDate></item></channel></rss>
+可直接访问[ssh_config](http</description><pubDate>Thu, 21 Jul 2022 09:31:55 GMT</pubDate></item></channel></rss>

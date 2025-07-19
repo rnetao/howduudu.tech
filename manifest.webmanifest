@@ -21,7 +21,7 @@
   "description": "记录Python、JavaScript技术实践与个人成长的博客，分享实用教程、开发经验与学习笔记，热爱开源热爱分享！",
   "lang": "zh-CN",
   "start_url": "/",
-  "theme_color": "#fcf3f5",
-  "background_color": "#fcf3f5",
+  "theme_color": "#fdfaf6",
+  "background_color": "#fdfaf6",
   "display": "standalone"
 }
