@@ -1,5 +1,5 @@
 {
-  "name": "HOWDUUDU（好读优读）",
+  "name": "SITESTAR（站点星空）",
   "icons": [
     {
       "src": "public/favicon/favicon-180x180.png",
@@ -18,7 +18,7 @@
     }
   ],
   "short_name": "HDUD",
-  "description": "记录Python、JavaScript技术实践与个人成长的博客，分享实用教程、开发经验与学习笔记，热爱开源热爱分享！",
+  "description": "承接网站开发、数据开发、品牌设计、包装设计等开发与设计需求，做您的专属程序员&设计师",
   "lang": "zh-CN",
   "start_url": "/",
   "theme_color": "#fdfaf6",
