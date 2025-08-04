@@ -1,0 +1,1 @@
+import{a as n,i as r}from"./router.BQ6hgP3R.js";const i="vtbot-brake-pad",s=()=>document.querySelector(`meta[name="${i}"]`)?.content,c=a=>{const t=s();if(t&&r(a)){const e=a.loader;a.loader=async()=>{await e(),await new Promise(o=>setTimeout(o,parseInt(t,10)))}}};document.addEventListener(n,c);
