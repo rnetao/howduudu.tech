@@ -1,0 +1,27 @@
+{
+  "name": "HOWDUUDU（好读优读）",
+  "icons": [
+    {
+      "src": "public/favicon/favicon-180x180.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "public/favicon/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "public/favicon/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "short_name": "HDUD",
+  "description": "记录Python、JavaScript技术实践与个人成长的博客，分享实用教程、开发经验与学习笔记，热爱开源热爱分享！",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "theme_color": "#fdfaf6",
+  "background_color": "#fdfaf6",
+  "display": "standalone"
+}
