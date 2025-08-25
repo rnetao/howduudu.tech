@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>HOWDUUDU</title><description>A blog documenting Python and JavaScript technical practices and personal growth, sharing practical tutorials, development experiences, and learning notes — passionate about open source and sharing!</description><link>https://blog.howduudu.tech/</link><item><title>补环境框架:sdenv版本更新V0.2.0</title><link>https://blog.howduudu.tech/blog/article/b5a7e0aa915e4a508d1473d5d5da1274/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/b5a7e0aa915e4a508d1473d5d5da1274/</guid><description>补环境框架sdenv发布V0.2.0版本</description><pubDate>Tue, 16 Apr 2024 11:07:32 GMT</pubDate></item><item><title>一道编程题的思考</title><link>https://blog.howduudu.tech/blog/article/1ed3e544bc2149daf20893e8caf9d81f/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/1ed3e544bc2149daf20893e8caf9d81f/</guid><description>昨天碰到了一道编程题，这道题目印象还挺深刻，记得还是读大学的时候，室友都已入睡自己还在熬夜写C++代码，当时AC的题目与这道题目类似(过去太久了记得是写个计算器)，题目放在代码文件里删了，大概就是输入一个字符串到程序里，该程序模拟计算器解析字符串并进行加、减、乘、除运算。
+
+　　昨天自己写的代码是通过三次循环，第一次循环将字符串解析成数字和操作符存入数组，第二次循环遍历数组处理乘法和除法运算，第三</description><pubDate>Thu, 11 Apr 2024 10:44:45 GMT</pubDate></item><item><title>纯算逆向：rs-reverse版本更新v1.7.1</title><link>https://blog.howduudu.tech/blog/article/71066bef99d6bac49691668ab431fa73/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/71066bef99d6bac49691668ab431fa73/</guid><description>瑞数纯算逆向项目rs-reverse V1.7.1版本发布</description><pubDate>Wed, 10 Apr 2024 19:18:37 GMT</pubDate></item><item><title>纯算逆向：rs-reverse版本更新v1.6.0</title><link>https://blog.howduudu.tech/blog/article/20d2e7455c76700ac9d441e05c0bf62f/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/20d2e7455c76700ac9d441e05c0bf62f/</guid><description>瑞数纯算逆向项目rs-reverse V1.6.0版本发布</description><pubDate>Thu, 28 Mar 2024 19:29:24 GMT</pubDate></item><item><title>补环境框架：document.all的c++方案(一)</title><link>https://blog.howduudu.tech/blog/article/00bb5f4a997c39858e25fa962e8cd5b8/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/00bb5f4a997c39858e25fa962e8cd5b8/</guid><description>使用不环境方案做爬虫项目时，document.all的检测一直是比较不容易通过的，该篇博文讨论用C++插件的方式过document.all的检测</description><pubDate>Wed, 13 Mar 2024 18:39:38 GMT</pubDate></item><item><title>补环境框架：document.all的c++方案(二)</title><link>https://blog.howduudu.tech/blog/article/de942bdea377f7f3ce6878fc04a8c76c/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/de942bdea377f7f3ce6878fc04a8c76c/</guid><description>使用不环境方案做爬虫项目时，document.all的检测一直是比较不容易通过的，该篇博文讨论用C++插件的方式过document.all的检测</description><pubDate>Wed, 13 Mar 2024 18:39:38 GMT</pubDate></item><item><title>纯算逆向：rs-reverse项目介绍与使用</title><link>https://blog.howduudu.tech/blog/article/0a30428fa8cd6370c5e5a0a91c2ea4be/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/0a30428fa8cd6370c5e5a0a91c2ea4be/</guid><description>瑞数纯算逆向项目rs-reverse介绍与使用</description><pubDate>Wed, 13 Mar 2024 18:38:30 GMT</pubDate></item><item><title>补环境框架：sdenv与浏览器生成cookie的一致性验证</title><link>https://blog.howduudu.tech/blog/article/9269aac48f459faada768f97fe6156d1/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/9269aac48f459faada768f97fe6156d1/</guid><description>反爬虫产品的反爬检测越来越高级，尤其是以瑞数vmp为代表的一类，我们用老式的技术已经很难做这一类网站的算法逆向，因为要花费的时间已经就劝退了很大一批开发人员，而且花了大量的时间最后仍旧无法完成逆向出算法的同学也大有人在。那么这个时候补环境框架的优势就很大的体现出来，那么github上有很多款补环境框架，不管补的齐不齐，就算最后产生了位数对的cookie，在使用该cookie时还是被检测到了！我们有</description><pubDate>Wed, 13 Mar 2024 02:53:58 GMT</pubDate></item><item><title>瑞数vmp-动态代码生成原理</title><link>https://blog.howduudu.tech/blog/article/95f60638eaa0647bcf327fb4f2c2887c/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/95f60638eaa0647bcf327fb4f2c2887c/</guid><description>刚开始就是很好奇，为啥给了一串字符串和一个数字就可以动态生成每次都不一样却都能正常运行的文本？为啥代码一格式化就会执行进入死循环？`window.$_ts`的值在动态代码生成过程中会越来越多值，它的作用是什么？动态代码中的循环加判断又是怎么生成的？又为何删除了源码的debugger后代码就运行异常？
+
+带着好奇我直接把动态代码生成的逻辑逆向了，核心代码经过逆向后就只有大概300多行，代码整理成项目</description><pubDate>Thu, 30 Nov 2023 00:52:58 GMT</pubDate></item><item><title>瑞数vmp-代码格式化后无法正常运行原因分析</title><link>https://blog.howduudu.tech/blog/article/420dc80bfb66280ddbb93d87864cadd1/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/420dc80bfb66280ddbb93d87864cadd1/</guid><description>## 问题
+
+在逆向开发过程中，我们常常会修改网页源码来调试和跟踪数据流与运行流，那么首先要做的就是将源码格式化，但是当我们逆向瑞数加密的网站时，如果直接格式化源码，运行后就会陷入无限循环，代码不格式化非常影响我们做逆向工作，那么这里博主分析下原因即处理这个无法格式化的问题。
+
+我们找到一个瑞数加密的网站，并获得入口js文件：http://wcjs.sbj.cnipa.gov.cn/c5rxzYr</description><pubDate>Mon, 13 Nov 2023 00:52:58 GMT</pubDate></item><item><title>Smali与Java文件的相互转换与运行</title><link>https://blog.howduudu.tech/blog/article/68b67877ab80b3cd3bae20b331296b2e/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/68b67877ab80b3cd3bae20b331296b2e/</guid><description>## Java代码转Smali代码
+
+假设有java源文件test.java
+
+1. 通过javac将java文件转换成class文件: 执行`javac test.java`生成`Test.class`文件
+2. 通过dx.jar将class文件转换成dex文件: 执行`dx --dex --output=./Test.dex Test.class`生成`Test.dex`文件
+3. 通过bak</description><pubDate>Tue, 17 Oct 2023 13:43:35 GMT</pubDate></item><item><title>Dalvik虚拟机解释语言：Smali</title><link>https://blog.howduudu.tech/blog/article/7c4b764db489e7cec68a9367ce7e4ae9/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/7c4b764db489e7cec68a9367ce7e4ae9/</guid><description>## Smali与Baksmali介绍
+
+1. Dalvik是冰岛的一个渔村，在冰岛语中，Smali表示汇编，Baksmali表示反汇编
+2. Smali语法大致基于Jasmin与Dedexer的语法
+3. Smali语法用来标记Dalvik字节码，并支持dex格式的全部功能，如注释、调试信息、行信息等
+4. Smali对应Java的smali文件转化成dex文件的汇编器
+5. Baksmali对</description><pubDate>Sat, 14 Oct 2023 14:20:36 GMT</pubDate></item><item><title>kotlin学习-数据类型</title><link>https://blog.howduudu.tech/blog/article/5ba2cb4d17e2078577406387b89c031c/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/5ba2cb4d17e2078577406387b89c031c/</guid><description>[官方文档地址](https://kotlinlang.org/docs/basic-types.html)
+
+# 基本数据类型
+
+## Number
+
+1. 数字中间可以用_拼接增加可读性，如：123_000、123_000.000_123
+2. 使用类型+?标记数据可为空，当为可空时，每次赋值都是一个新的引用地址，此时使用===返回false，但是在JVM环境下，会对-128至127的数字做内</description><pubDate>Mon, 22 Aug 2022 14:34:04 GMT</pubDate></item><item><title>AST交互-非连续判断三元表达式转if语句</title><link>https://blog.howduudu.tech/blog/article/4bc53a5b9eecf05a4b058e1270254f33/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/4bc53a5b9eecf05a4b058e1270254f33/</guid><description>通常使用`三元表达式转switch语句`的代码可以完成大部分的三元表达式代码美化需求，但是如果三元表达式的判断条件不是连续数字时，此时更适合转为if/else语句，如代码：
+
+```javascript
+function _$du() {
+  var _$$I;
+  _$$I = _$gf[++_$f1];
+  _$$I &lt;= 37
+    ? _$$I &lt;= 24
+      ? (_$fx =</description><pubDate>Sat, 20 Aug 2022 20:58:33 GMT</pubDate></item><item><title>AST交互-三元表达式转switch语句</title><link>https://blog.howduudu.tech/blog/article/a2bebb691101731a269ea61fe005c107/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/a2bebb691101731a269ea61fe005c107/</guid><description>这两年前端代码加密进化很大，为了在逆向过程中不那么累，我们需要使用babel修改网站源码，改成我们调试不那么累的代码，如将三元表达式语句代码改成switch语句代码。
+
+我们找到网站实际代码如下：
+
+```javascript
+if (_$j7 &lt;= 63)
+  _$j7 &lt;= 15 ? _$j7 &lt;= 3 ? _$j7 &lt;= 0 ? (_$kb = _$jA[--_$g3],
+  _$kb = </description><pubDate>Mon, 15 Aug 2022 20:58:33 GMT</pubDate></item><item><title>AST交互-if语句转switch语句</title><link>https://blog.howduudu.tech/blog/article/09cb2120c787795e556b782874ed43ec/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/09cb2120c787795e556b782874ed43ec/</guid><description>这两年前端代码加密进化很大，为了在逆向过程中不那么累，我们需要使用babel修改网站源码，改成我们调试不那么累的代码，如将if语句代码改成switch语句代码。
+
+我们找到网站实际代码如下：
+
+```javascript
+while (1) {
+  _$a9 = _$kI[_$iW++];
+  if (_$a9 &lt; 12) {
+    if (_$a9 &lt; 4) {
+      if (_$a9 </description><pubDate>Sat, 13 Aug 2022 20:58:33 GMT</pubDate></item><item><title>\@babel|traverse使用教程</title><link>https://blog.howduudu.tech/blog/article/c501399806dcdf7a3e7cb3d3552ecfd1/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/c501399806dcdf7a3e7cb3d3552ecfd1/</guid><description>## 资源
+
+官方文档：https://babeljs.io/docs/babel-traverse
+
+K哥文章：https://mp.weixin.qq.com/s/fIbPuNMs5FRADJE5MOZXgA
+
+## 说明
+
+安装命令: `npm install --save @babel/traverse`
+
+`@babel/traverse`是babel的核心组件之一，需要与`@babel</description><pubDate>Fri, 12 Aug 2022 20:58:33 GMT</pubDate></item><item><title>\@babel|types使用教程</title><link>https://blog.howduudu.tech/blog/article/0b89d32afdac7a92cec8746f9b6ab53c/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/0b89d32afdac7a92cec8746f9b6ab53c/</guid><description>## 资源
+
+官方文档：https://babeljs.io/docs/babel-types
+
+## 说明
+
+`@babel/types`这个包对于搞`TypeScript`肯定熟悉，写ts肯定会引入一个types的包，用到的类型定义都是从这个包导出来，`@babel/types`除了提供类型外还提供了对应的检测方法与构造方法。
+
+包引入：`const t = require(&quot;@babel/t</description><pubDate>Wed, 10 Aug 2022 13:09:33 GMT</pubDate></item><item><title>\@babel|parser使用教程</title><link>https://blog.howduudu.tech/blog/article/9e3e7defd6ffc7d690836a0347cb44a4/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/9e3e7defd6ffc7d690836a0347cb44a4/</guid><description>## 资源
+
+官方文档：https://www.babeljs.cn/docs/babel-parser
+
+在线AST工具：https://astexplorer.net/
+
+## 说明
+
+`@babel/parser`是Babel最重要的包之一，用于词法分析，即将JavaScript代码转换成AST树，最常见的就是前端中配合webpack打包代码。
+
+包安装：`npm install @babe</description><pubDate>Tue, 09 Aug 2022 20:58:33 GMT</pubDate></item><item><title>使用ssh_config管理ssh密钥</title><link>https://blog.howduudu.tech/blog/article/1b294f81fac3b67f71d0c5f2b258c1a1/</link><guid isPermaLink="true">https://blog.howduudu.tech/blog/article/1b294f81fac3b67f71d0c5f2b258c1a1/</guid><description>## 前言
+
+我们用ssh公钥与git仓库做代码存储交互，提供代码存管的平台有很多，如Github、Bitbucket、Gitlab等，通常我们生成一次key后在多平台共用，但是如果是单个平台就有多个用户管理多个仓库时这种方式就不适用了。
+
+网上有很多这方面的教程，中文的基本上都是这个抄袭那个抄来抄去，还云里雾里，因此做下记录，提供用法来源和使用示例
+
+可直接访问[ssh_config](http</description><pubDate>Thu, 21 Jul 2022 09:31:55 GMT</pubDate></item></channel></rss>

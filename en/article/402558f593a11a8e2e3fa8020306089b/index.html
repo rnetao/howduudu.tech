@@ -1,0 +1,626 @@
+<!DOCTYPE html><html lang="en" data-astro-transition-scope="astro-qkv3x6xi-2"> <head><script type="module" src="/_astro/BaseLayout.astro_astro_type_script_index_0_lang.CH-A2EY5.js"></script><title>lua的table内置库 - blog.menus.article - HDUD</title><meta charset="UTF-8"><link rel="canonical" href="https://blog.howduudu.tech/en/article/402558f593a11a8e2e3fa8020306089b/"><meta name="description" content="## concat
+
+**table.concat(table [, sep [, i [, j]]])**
+
+拼接table中的元素生成字符串，其中入参sep为拼接符，i为起点坐标，j为终点坐标
+
+## sort
+
+**table.sort(table [, comp])**
+
+table值排序，comp为对比方法
+
+## insert
+
+**table.insert(table, [pos,]"><meta name="robots" content="index, follow"><meta property="og:title" content="lua的table内置库 - blog.menus.article"><meta property="og:type" content="article"><meta property="og:image" content="/og-image/402558f593a11a8e2e3fa8020306089b.png"><meta property="og:url" content="https://blog.howduudu.tech/en/article/402558f593a11a8e2e3fa8020306089b/"><meta property="article:published_time" content="Thu Apr 14 2022 07:19:03 GMT+0800 (China Standard Time)"><meta property="article:author" content="草木一秋"><meta property="article:tag" content="Lua"><link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="192x192" href="/favicon/favicon-192x192.png"><link rel="icon" type="image/png" sizes="512x512" href="/favicon/favicon-512x512.png"><link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg"><link rel="apple-touch-icon" type="image/png" sizes="180x180" href="/favicon/favicon-180x180.png"><link rel="sitemap" href="/sitemap-index.xml"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="msapplication-TileColor" content="#333333"><meta name="theme-color" content="#fdfaf6"><meta name="author" content="草木一秋"><meta name="email" content="it17621000@163.com"><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BrN4--U2.js"></script><link rel="stylesheet" href="/_astro/_article_id_.BCIw3xQl.css"><script type="module" src="/_astro/page.BvKxy2Uc.js"></script><style>[data-astro-transition-scope="astro-iaokrfgx-1"] { view-transition-name: astro-iaokrfgx-1; }@layer astro { ::view-transition-old(astro-iaokrfgx-1) { 
+	animation-duration: 1s, 1s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }::view-transition-new(astro-iaokrfgx-1) { 
+	animation-duration: 1s, 1s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back]::view-transition-old(astro-iaokrfgx-1) { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back]::view-transition-new(astro-iaokrfgx-1) { 
+	animation-name: astroFadeIn, astroSlideFromLeft; } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-iaokrfgx-1"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-iaokrfgx-1"] { 
+	animation-duration: 1s, 1s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeOut, astroSlideToLeft; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-iaokrfgx-1"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-iaokrfgx-1"] { 
+	animation-duration: 1s, 1s;
+	animation-timing-function: cubic-bezier(0.76, 0, 0.24, 1), cubic-bezier(0.76, 0, 0.24, 1);
+	animation-fill-mode: both, both;
+	animation-name: astroFadeIn, astroSlideFromRight; }[data-astro-transition=back][data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-iaokrfgx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="old"][data-astro-transition-scope="astro-iaokrfgx-1"] { 
+	animation-name: astroFadeOut, astroSlideToRight; }[data-astro-transition=back][data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-iaokrfgx-1"],
+			[data-astro-transition=back][data-astro-transition-fallback="new"][data-astro-transition-scope="astro-iaokrfgx-1"] { 
+	animation-name: astroFadeIn, astroSlideFromLeft; }</style><style>[data-astro-transition-scope="astro-qkv3x6xi-2"] { view-transition-name: root; }@layer astro { ::view-transition-old(root) { animation: none; opacity: 0; mix-blend-mode: normal; }::view-transition-new(root) { animation: none; mix-blend-mode: normal; }::view-transition-group(root) { animation: none } }[data-astro-transition-fallback="old"] [data-astro-transition-scope="astro-qkv3x6xi-2"],
+			[data-astro-transition-fallback="old"][data-astro-transition-scope="astro-qkv3x6xi-2"] { animation: none; mix-blend-mode: normal; }[data-astro-transition-fallback="new"] [data-astro-transition-scope="astro-qkv3x6xi-2"],
+			[data-astro-transition-fallback="new"][data-astro-transition-scope="astro-qkv3x6xi-2"] { animation: none; mix-blend-mode: normal; }</style>    <link rel="icon" href="/favicon-32x32.png" type="image/png">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <meta name="theme-color" content="#fdfaf6">
+    <link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous">
+</head> <!-- <body class="overflow-x-hidden bg-[#fdfaf6] dark:bg-[#2f2f2f] text-[#333] dark:text-[#fdfaf6]"> --> <body class="break-all bg-[initial]"> <div id="cursor-circle"></div> <script data-astro-rerun>
+function runInit () {
+  if (
+		!navigator.userAgent
+			.toLowerCase()
+			.match(/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i)
+	) {
+    const circle = document.getElementById('cursor-circle');
+    let flag = false;
+    window.addEventListener('mousemove', (e) => {
+      if (!flag) {
+        flag = true
+        circle.style.transform = `translate(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%))`;
+
+        const target = document.elementFromPoint(e.clientX, e.clientY);
+
+        if (target?.closest('.hover-target, button, a, [role="button"]')) {
+          circle.classList.add('active');
+        } else {
+          circle.classList.remove('active');
+        }
+        flag = false
+      }
+    });
+  }
+}
+if (document.readyState === 'complete') {
+  runInit();
+} else {
+  window.addEventListener('DOMContentLoaded', runInit);
+}
+
+window.addEventListener('astro:after-swap', runInit);
+</script> <style>
+html, a, button {
+  cursor: none !important;
+}
+#cursor-circle {
+  position: fixed;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  pointer-events: none;
+  mix-blend-mode: difference;
+  background: white;
+  transform: translate(-100%, -100%);
+  z-index: 9999;
+  transition:
+    width 0.3s ease,
+    height 0.3s ease,
+    background 0.3s ease,
+    border 0.3s ease;
+}
+#cursor-circle.active {
+  width: 2rem;
+  height: 2rem;
+}
+</style>   <div class="navbar bg-base-100 shadow-[0_1px_0px_0px_rgba(0,0,0,0.1)] px-2 md:px-6 xl:px-10 py-2 max-w-[1400px] mx-auto justify-between max-w-[1500px]"> <div class="navbar-start w-max"> <div class="dropdown"> <div tabindex="0" role="button" class="btn btn-ghost md:hidden"> <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16"></path> </svg> </div> <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-max p-2 shadow"> <li class="text-[#aaa]"><a href="/en/" class="text-lg" astro-prefetch="true"><span class="icon-[fa-solid--home]"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Home&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="/en/posts/1/" class="text-lg" astro-prefetch="true"><span class="icon-[material-symbols--article]"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Posts&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="/en/archive/" class="text-lg" astro-prefetch="true"><span class="icon-[mdi--archive-edit]"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Archive&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="/en/tags/Python/" class="text-lg" astro-prefetch="true"><span class="icon-[solar--tag-bold]"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Tags&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="mailto:it17621000@163.com" class="text-lg" astro-prefetch="true"><span class="icon-[mdi--contact-mail]"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Contact&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li> </ul> </div> <a href="/"> <img src="/images/hdud-logo-w.svg" class="w-24 h-auto hidden md:flex"> <img src="/images/hdud-logo.svg" class="w-10 h-auto md:hidden"> </a> </div> <div class="flex navbar-end w-max"> <div class="hidden md:flex"> <ul class="menu menu-horizontal px-1"> <li class="text-[#aaa]"><a href="/en/" class="text-lg" astro-prefetch="true"><span class="icon-[fa-solid--home] max-lg:hidden"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Home&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="/en/posts/1/" class="text-lg" astro-prefetch="true"><span class="icon-[material-symbols--article] max-lg:hidden"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Posts&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="/en/archive/" class="text-lg" astro-prefetch="true"><span class="icon-[mdi--archive-edit] max-lg:hidden"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Archive&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="/en/tags/Python/" class="text-lg" astro-prefetch="true"><span class="icon-[solar--tag-bold] max-lg:hidden"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Tags&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li><li class="text-[#aaa]"><a href="mailto:it17621000@163.com" class="text-lg" astro-prefetch="true"><span class="icon-[mdi--contact-mail] max-lg:hidden"></span><span x-data="((text2) => {
+    const chars = &#34;ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890!@#$%^&#38;*()&#34;;
+    return {
+      text: text2.split(&#34;&#34;),
+      chars: text2.split(&#34;&#34;),
+      interval: null,
+      init() {
+        this.chars = this.text.slice();
+      },
+      randomChar() {
+        return chars[Math.floor(Math.random() * chars.length)];
+      },
+      clear() {
+        if (this.interval) clearInterval(this.interval);
+        this.init();
+      },
+      start() {
+        this.clear();
+        let frame = 0;
+        const onetime = Math.round(500 / this.text.length);
+        this.interval = setInterval(() => {
+          this.chars = this.text.map((ch, i) => {
+            if (ch === &#34; &#34;) return &#34; &#34;;
+            return this.randomChar();
+          });
+          frame++;
+          if (frame >= this.text.length) {
+            this.clear();
+            this.chars = this.text.slice();
+          }
+        }, onetime);
+      }
+    };
+  })(&#34;Contact&#34;)" x-init="init()" class="inline-block " x-on:mouseenter="start()" x-on:mouseleave="clear()"> <span class="font-mono" x-text="chars.join('')"></span> </span></a></li> </ul> </div> <div class="divider divider-horizontal max-md:hidden"></div> <div class="flex items-center"> <div class="dropdown dropdown-center"> <button tabindex="0" role="button" class="flex m-1 text-2xl"> <span class="icon-[material-symbols--translate]"></span> </button> <ul tabindex="0" class="dropdown-content menu bg-[#333333] rounded-box z-1 w-max p-2 shadow-sm"> <a href="/article/402558f593a11a8e2e3fa8020306089b/" class="text-[#fafafa] hover:text-[#cccccc] p-2"> 简体中文 </a><a href="/zh-hant/article/402558f593a11a8e2e3fa8020306089b/" class="text-[#fafafa] hover:text-[#cccccc] p-2"> 繁體中文 </a><a href="javascrpt:null" class="text-[#fafafa] hover:text-[#cccccc] p-2 text-green-600"> English </a> </ul> </div>
+&nbsp;&nbsp;
+<div x-data="((themes2) => {
+    const getTheme = (isDark) => isDark ? themes2.dark : themes2.light;
+    const getThemePreference = () => {
+      if (typeof localStorage !== &#34;undefined&#34; &#38;&#38; localStorage.getItem(&#34;theme&#34;)) {
+        return localStorage.getItem(&#34;theme&#34;);
+      }
+      return getTheme(window.matchMedia(&#34;(prefers-color-scheme: dark)&#34;).matches);
+    };
+    return {
+      isDark: getThemePreference() === themes2.dark,
+      start() {
+        this.update(getTheme(this.isDark));
+        this.$watch(&#34;isDark&#34;, (val) => this.update(getTheme(val)));
+      },
+      update(theme) {
+        document.documentElement.setAttribute(&#34;data-theme&#34;, theme);
+        localStorage.setItem(&#34;theme&#34;, theme);
+      }
+    };
+  })({&#34;light&#34;:&#34;silk&#34;,&#34;dark&#34;:&#34;business&#34;})" x-init="start()"> <label class="swap swap-rotate cursor-pointer"> <input type="checkbox" x-model="isDark" class="theme-controller"> <span class="swap-on size-8 fill-current icon-[flowbite--sun-outline]"></span> <span class="swap-off size-8 fill-current icon-[line-md--moon]"></span> </label> </div> <script>(function(){const themes = {"light":"silk","dark":"business"};
+
+	const getThemePreference = () => {
+		if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+			return localStorage.getItem('theme');
+		}
+		return window.matchMedia('(prefers-color-scheme: dark)').matches ? themes.dark : themes.light;
+	};
+  document.documentElement.setAttribute('data-theme', getThemePreference());
+})();</script> </div> </div> </div>  <section class="justify-center md:px-4 lg:px-8 relative flex flex-row w-full h-full mt-2 md:mt-6 xl:mt-8 gap-4" data-astro-transition-scope="astro-iaokrfgx-1"> <section class="overflow-y-scroll prose dark:prose-invert prose-tao sticky top-24 h-screen w-auto max-w-[200px] lg:max-w-[260px] xl:max-w-[350px] min-w-[200px] max-md:hidden"> <span class="text-xl font-bold">Table of Contents：</span> <ol data-astro-toc="1"><li data-astro-toc="1"> lua的table内置库 <ol data-astro-toc="2"><li data-astro-toc="2"> <a href="#concat">concat</a> <ol data-astro-toc="3"></ol> </li><li data-astro-toc="2"> <a href="#sort">sort</a> <ol data-astro-toc="3"></ol> </li><li data-astro-toc="2"> <a href="#insert">insert</a> <ol data-astro-toc="3"></ol> </li><li data-astro-toc="2"> <a href="#foreach">foreach</a> <ol data-astro-toc="3"></ol> </li><li data-astro-toc="2"> <a href="#foreachi">foreachi</a> <ol data-astro-toc="3"></ol> </li><li data-astro-toc="2"> <a href="#remove">remove</a> <ol data-astro-toc="3"></ol> </li><li data-astro-toc="2"> <a href="#setn">setn</a> <ol data-astro-toc="3"></ol> </li></ol> </li></ol> </section> <div class="max-w-max flex-1 w-full flex max-xl:flex-col overflow-scroll gap-4"> <article class="max-xl:w-full prose dark:prose-invert prose-tao break-all whitespace-normal cursor-none w-[61.8%] flex-1 p-4 overflow-scroll"> <section> <h1 class="max-md:text-center"> lua的table内置库 </h1> <div><b>Reading Time：</b><span>The full text has <b>140</b> words, estimated reading time: <b>1</b> minutes</span></div> <div><b>Creation Date：</b>2022-04-14</div> <div class="flex flex-row flex-wrap"> <b class="w-max h-max"> Article Tags：
+</b> <div x-data="{ 
+    tags: [{&#34;tag&#34;:&#34;Lua&#34;,&#34;icon&#34;:[&#34;/skillicons/Lua-Light.svg&#34;,&#34;/skillicons/Lua-Dark.svg&#34;]}], 
+    isShowIcon: true, 
+    isShowText: true, 
+  }" class="flex flex-wrap gap-2"> <template x-for="item in tags" :key="item.tag"> <a x-show="isShowText || (isShowIcon && item.icon)" class="flex items-center hover:underline font-normal" :class="{ tooltip: !isShowText }" :href="&#34;/en/tags/&#34; + item.tag" :data-tip="item.tag"> <template x-if="isShowIcon && Array.isArray(item.icon) && item.icon.length === 2"> <div class="h-max flex"> <img :src="item.icon[0]" :alt="item.tag" class="size-4 mr-1 hidden dark:inline-block mt-0 mb-0"> <img :src="item.icon[1]" :alt="item.tag" class="size-4 mr-1 inline-block dark:hidden mt-0 mb-0"> </div> </template> <template x-if="isShowText && !item.icon"> <span x-text="item.tag"></span> </template> <template x-if="isShowText === true && item.icon"> <span x-text="item.tag"></span> </template> <template x-if="isShowText === 'auto' && item.icon"> <span class="max-sm:hidden" x-text="item.tag"></span> </template> </a> </template> <template x-if="tags.filter(it => !(!it.icon && isShowText === false)).length === 0"> <span class="icon-[tabler--space-off] pointer-events-none opacity-50 cursor-not-allowed"></span> </template> </div> </div> <div class="truncate"><b>Previous Article：</b><a class="hover:underline font-normal" href="/en/article/5ee4322e90fc7bf9074350c3191b09ed/">lua的math内置库</a></div><div class="truncate"><b>Next Article：</b><a class="hover:underline font-normal" href="/en/article/508ad0d0ecefac3c2cdf7d658247f9bb/">lua的string内置库</a></div> </section> <div x-data="((props) => {
+    const {
+      classNames = {},
+      value = window.cowsay_random(),
+      maxHeight = 240
+    } = props;
+    return {
+      classNames,
+      data: value,
+      h: maxHeight,
+      scale: 1,
+      randomize() {
+        this.data = window.cowsay_random();
+        this.$nextTick(() => this.updateWidth());
+      },
+      updateWidth() {
+        this.scale = 1;
+        this.h = maxHeight;
+        this.$nextTick(() => {
+          const content = this.$refs.content;
+          if (!content) return;
+          const wrapWidth = content.parentElement.clientWidth;
+          const wrapHeight = maxHeight;
+          const contentWidth = content.scrollWidth;
+          const contentHeight = content.scrollHeight;
+          const newScale = Math.min(wrapWidth / contentWidth, wrapHeight / contentHeight);
+          this.scale = newScale;
+          if (contentWidth > contentHeight) {
+            this.h = contentHeight * newScale;
+          }
+        });
+      }
+    };
+  })({&#34;maxHeight&#34;:300,&#34;classNames&#34;:{&#34;base&#34;:&#34;flex my-4&#34;}})" x-init="updateWidth()" x-on:resize.window="updateWidth()" class="flex justify-center items-center h-full sm:min-w-[400px] self-center" :class="`${classNames.base} ${scale > 1 ? classNames.up : classNames.down}`" :style="`height:${h}px`"> <pre x-ref="content" class="transition-all duration-500 whitespace-pre h-min leading-tight font-mono text-sm hover:text-[turquoise] cursor-pointer select-none min-w-max" x-text="data.value" @click="randomize()" :style="`scale:${scale}; font-weight:${scale > 1 ? 400 : 900}`"></pre> </div> <div class="divider">BEGIN</div> <h2 id="concat">concat</h2>
+<p><strong>table.concat(table [, sep [, i [, j]]])</strong></p>
+<p>拼接table中的元素生成字符串，其中入参sep为拼接符，i为起点坐标，j为终点坐标</p>
+<h2 id="sort">sort</h2>
+<p><strong>table.sort(table [, comp])</strong></p>
+<p>table值排序，comp为对比方法</p>
+<h2 id="insert">insert</h2>
+<p><strong>table.insert(table, [pos,] value)</strong></p>
+<p>table中插入值，pos为下标</p>
+<h2 id="foreach">foreach</h2>
+<p><strong>table.foreach(table, f)</strong></p>
+<p>循环table中的键值对作为函数入参，已在5.1版本弃用，使用<code>pairs()</code>替代</p>
+<h2 id="foreachi">foreachi</h2>
+<p><strong>table.foreachi(table, f)</strong></p>
+<p>同foreach已在5.1版本弃用，使用<code>ipairs()</code>替代</p>
+<h2 id="remove">remove</h2>
+<p><strong>table.remove(table [, pos])</strong></p>
+<p>删除table中指定下标的值，当不指定pos下标值则删除末尾</p>
+<h2 id="setn">setn</h2>
+<p><strong>table.setn(table, n)</strong></p>
+<p>设置table长度</p> <div class="divider">FINISH</div> <div class="truncate"><b>Previous Article：</b><a class="hover:underline font-normal" href="/en/article/5ee4322e90fc7bf9074350c3191b09ed/">lua的math内置库</a></div><div class="truncate"><b>Next Article：</b><a class="hover:underline font-normal" href="/en/article/508ad0d0ecefac3c2cdf7d658247f9bb/">lua的string内置库</a></div> <br> <script src="https://giscus.app/client.js" data-repo="rnetao/howduudu.tech" data-repo-id="R_kgDOPKloKg" data-category="Blog Post Comments" data-category-id="DIC_kwDOPKloKs4CszS2" data-mapping="url" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="transparent_dark" data-lang="en" crossorigin="anonymous" async data-astro-rerun></script> </article> <section class="h-max w-[320px] max-xl:w-[calc(100%-4px)] max-xl:mx-auto 2xl:w-[350px] mr-1 px-4 md:px-0 max-xl:pb-8"> <div x-data="((shows2) => ({
+    date: &#34;&#34;,
+    time: &#34;&#34;,
+    day: &#34;&#34;,
+    start() {
+      const updateClock = () => {
+        const now = /* @__PURE__ */ new Date();
+        const daysOfWeek = [&#34;sunday&#34;, &#34;monday&#34;, &#34;tuesday&#34;, &#34;wednesday&#34;, &#34;thursday&#34;, &#34;friday&#34;, &#34;saturday&#34;].map((key) => shows2[key]);
+        this.day = daysOfWeek[now.getDay()];
+        this.date = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, &#34;0&#34;)}-${String(now.getDate()).padStart(2, &#34;0&#34;)}`;
+        this.time = `${String(now.getHours()).padStart(2, &#34;0&#34;)}:${String(now.getMinutes()).padStart(2, &#34;0&#34;)}:${String(now.getSeconds()).padStart(2, &#34;0&#34;)}`;
+      };
+      updateClock();
+      setInterval(updateClock, 1e3);
+    }
+  }))({&#34;monday&#34;:&#34;Monday&#34;,&#34;tuesday&#34;:&#34;Tuesday&#34;,&#34;wednesday&#34;:&#34;Wednesday&#34;,&#34;thursday&#34;:&#34;Thursday&#34;,&#34;friday&#34;:&#34;Friday&#34;,&#34;saturday&#34;:&#34;Saturday&#34;,&#34;sunday&#34;:&#34;Sunday&#34;})" x-init="start()" class="hover:text-purple-500 dark:hover:text-[turquoise] dark:text-[#fafaf6] text-[#888] font-handjet flex flex-col items-center justify-center py-8 overflow-hidden shadow-md dark:shadow-cyan/20 cursor-none"> <p class="mx-auto text-[1.8em] tracking-[0.3em] font-light" x-text="date"></p> <p class="mx-auto text-[4em] tracking-[0.2em] font-light" x-text="time"></p> <p class="mx-auto text-[1.7em] uppercase tracking-[0.4em] font-light" x-text="day"></p> </div> <div class="flex flex-col shadow-md dark:shadow-cyan/20 mt-8 p-8 xl:p-4 " x-data="((posts) => {
+    return {
+      posts,
+      data: [],
+      init() {
+        this.shuffle();
+      },
+      shuffle() {
+        this.data = [...this.posts].sort(() => Math.random() - 0.5).slice(0, 6);
+      },
+      formatDate(date) {
+        const d = new Date(date);
+        const year = d.getFullYear();
+        const month = String(d.getMonth() + 1).padStart(2, &#34;0&#34;);
+        const day = String(d.getDate()).padStart(2, &#34;0&#34;);
+        return `${year}-${month}-${day}`;
+      }
+    };
+  })([{&#34;description&#34;:&#34;补环境框架sdenv发布V0.2.0版本&#34;,&#34;title&#34;:&#34;补环境框架:sdenv版本更新V0.2.0&#34;,&#34;uuid&#34;:&#34;b5a7e0aa915e4a508d1473d5d5da1274&#34;,&#34;date&#34;:&#34;2024-04-16T11:07:32.000Z&#34;,&#34;tags&#34;:[&#34;sdenv&#34;,&#34;补环境框架&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;补环境框架sdenv版本更新v020&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;昨天碰到了一道编程题，这道题目印象还挺深刻，记得还是读大学的时候，室友都已入睡自己还在熬夜写C++代码，当时AC的题目与这道题目类似(过去太久了记得是写个计算器)，题目放在代码文件里删了，大概就是输入一个字符串到程序里，该程序模拟计算器解析字符串并进行加、减、乘、除运算。\n\n　　昨天自己写的代码是通过三次循环，第一次循环将字符串解析成数字和操作符存入数组，第二次循环遍历数组处理乘法和除法运算，第三&#34;,&#34;title&#34;:&#34;一道编程题的思考&#34;,&#34;uuid&#34;:&#34;1ed3e544bc2149daf20893e8caf9d81f&#34;,&#34;date&#34;:&#34;2024-04-11T10:44:45.000Z&#34;,&#34;tags&#34;:[&#34;算法&#34;],&#34;id&#34;:&#34;一道编程题的思考&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;瑞数纯算逆向项目rs-reverse V1.7.1版本发布&#34;,&#34;title&#34;:&#34;纯算逆向：rs-reverse版本更新v1.7.1&#34;,&#34;uuid&#34;:&#34;71066bef99d6bac49691668ab431fa73&#34;,&#34;date&#34;:&#34;2024-04-10T19:18:37.000Z&#34;,&#34;tags&#34;:[&#34;rs-reverse&#34;,&#34;纯算逆向&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;纯算逆向rs-reverse版本更新v171&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;瑞数纯算逆向项目rs-reverse V1.6.0版本发布&#34;,&#34;title&#34;:&#34;纯算逆向：rs-reverse版本更新v1.6.0&#34;,&#34;uuid&#34;:&#34;20d2e7455c76700ac9d441e05c0bf62f&#34;,&#34;date&#34;:&#34;2024-03-28T19:29:24.000Z&#34;,&#34;tags&#34;:[&#34;rs-reverse&#34;,&#34;纯算逆向&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;纯算逆向纯算逆向rs-reverse版本更新v160&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;使用不环境方案做爬虫项目时，document.all的检测一直是比较不容易通过的，该篇博文讨论用C++插件的方式过document.all的检测&#34;,&#34;title&#34;:&#34;补环境框架：document.all的c++方案(一)&#34;,&#34;uuid&#34;:&#34;00bb5f4a997c39858e25fa962e8cd5b8&#34;,&#34;date&#34;:&#34;2024-03-13T18:39:38.000Z&#34;,&#34;tags&#34;:[&#34;sdenv&#34;,&#34;补环境框架&#34;,&#34;NodeJS&#34;,&#34;C++&#34;],&#34;id&#34;:&#34;补环境框架documentall的c方案一&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;C++&#34;,&#34;icon&#34;:[&#34;/skillicons/CPP.svg&#34;,&#34;/skillicons/CPP.svg&#34;]}]},{&#34;description&#34;:&#34;使用不环境方案做爬虫项目时，document.all的检测一直是比较不容易通过的，该篇博文讨论用C++插件的方式过document.all的检测&#34;,&#34;title&#34;:&#34;补环境框架：document.all的c++方案(二)&#34;,&#34;uuid&#34;:&#34;de942bdea377f7f3ce6878fc04a8c76c&#34;,&#34;date&#34;:&#34;2024-03-13T18:39:38.000Z&#34;,&#34;tags&#34;:[&#34;sdenv&#34;,&#34;补环境框架&#34;,&#34;NodeJS&#34;,&#34;C++&#34;],&#34;id&#34;:&#34;补环境框架documentall的c方案二&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;C++&#34;,&#34;icon&#34;:[&#34;/skillicons/CPP.svg&#34;,&#34;/skillicons/CPP.svg&#34;]}]},{&#34;description&#34;:&#34;瑞数纯算逆向项目rs-reverse介绍与使用&#34;,&#34;title&#34;:&#34;纯算逆向：rs-reverse项目介绍与使用&#34;,&#34;uuid&#34;:&#34;0a30428fa8cd6370c5e5a0a91c2ea4be&#34;,&#34;date&#34;:&#34;2024-03-13T18:38:30.000Z&#34;,&#34;tags&#34;:[&#34;rs-reverse&#34;,&#34;纯算逆向&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;纯算逆向rs-reverse项目介绍与使用&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;反爬虫产品的反爬检测越来越高级，尤其是以瑞数vmp为代表的一类，我们用老式的技术已经很难做这一类网站的算法逆向，因为要花费的时间已经就劝退了很大一批开发人员，而且花了大量的时间最后仍旧无法完成逆向出算法的同学也大有人在。那么这个时候补环境框架的优势就很大的体现出来，那么github上有很多款补环境框架，不管补的齐不齐，就算最后产生了位数对的cookie，在使用该cookie时还是被检测到了！我们有&#34;,&#34;title&#34;:&#34;补环境框架：sdenv与浏览器生成cookie的一致性验证&#34;,&#34;uuid&#34;:&#34;9269aac48f459faada768f97fe6156d1&#34;,&#34;date&#34;:&#34;2024-03-13T02:53:58.000Z&#34;,&#34;tags&#34;:[&#34;sdenv&#34;,&#34;补环境框架&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;补环境框架sdenv与浏览器生成cookie的一致性验证&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;刚开始就是很好奇，为啥给了一串字符串和一个数字就可以动态生成每次都不一样却都能正常运行的文本？为啥代码一格式化就会执行进入死循环？`window.$_ts`的值在动态代码生成过程中会越来越多值，它的作用是什么？动态代码中的循环加判断又是怎么生成的？又为何删除了源码的debugger后代码就运行异常？\n\n带着好奇我直接把动态代码生成的逻辑逆向了，核心代码经过逆向后就只有大概300多行，代码整理成项目&#34;,&#34;title&#34;:&#34;瑞数vmp-动态代码生成原理&#34;,&#34;uuid&#34;:&#34;95f60638eaa0647bcf327fb4f2c2887c&#34;,&#34;date&#34;:&#34;2023-11-30T00:52:58.000Z&#34;,&#34;tags&#34;:[&#34;爬虫&#34;,&#34;逆向&#34;,&#34;瑞数&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;瑞数vmp-动态代码生成原理&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;## 问题\n\n在逆向开发过程中，我们常常会修改网页源码来调试和跟踪数据流与运行流，那么首先要做的就是将源码格式化，但是当我们逆向瑞数加密的网站时，如果直接格式化源码，运行后就会陷入无限循环，代码不格式化非常影响我们做逆向工作，那么这里博主分析下原因即处理这个无法格式化的问题。\n\n我们找到一个瑞数加密的网站，并获得入口js文件：http://wcjs.sbj.cnipa.gov.cn/c5rxzYr&#34;,&#34;title&#34;:&#34;瑞数vmp-代码格式化后无法正常运行原因分析&#34;,&#34;uuid&#34;:&#34;420dc80bfb66280ddbb93d87864cadd1&#34;,&#34;date&#34;:&#34;2023-11-13T00:52:58.000Z&#34;,&#34;tags&#34;:[&#34;爬虫&#34;,&#34;逆向&#34;,&#34;瑞数&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;瑞数vmp-代码格式化后无法正常运行原因分析&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;## Java代码转Smali代码\n\n假设有java源文件test.java\n\n1. 通过javac将java文件转换成class文件: 执行`javac test.java`生成`Test.class`文件\n2. 通过dx.jar将class文件转换成dex文件: 执行`dx --dex --output=./Test.dex Test.class`生成`Test.dex`文件\n3. 通过bak&#34;,&#34;title&#34;:&#34;Smali与Java文件的相互转换与运行&#34;,&#34;uuid&#34;:&#34;68b67877ab80b3cd3bae20b331296b2e&#34;,&#34;date&#34;:&#34;2023-10-17T13:43:35.000Z&#34;,&#34;tags&#34;:[&#34;Smali&#34;,&#34;安卓逆向&#34;,&#34;Java&#34;],&#34;id&#34;:&#34;smali与java文件的相互转换与运行&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Java&#34;,&#34;icon&#34;:[&#34;/skillicons/Java-Light.svg&#34;,&#34;/skillicons/Java-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;## Smali与Baksmali介绍\n\n1. Dalvik是冰岛的一个渔村，在冰岛语中，Smali表示汇编，Baksmali表示反汇编\n2. Smali语法大致基于Jasmin与Dedexer的语法\n3. Smali语法用来标记Dalvik字节码，并支持dex格式的全部功能，如注释、调试信息、行信息等\n4. Smali对应Java的smali文件转化成dex文件的汇编器\n5. Baksmali对&#34;,&#34;title&#34;:&#34;Dalvik虚拟机解释语言：Smali&#34;,&#34;uuid&#34;:&#34;7c4b764db489e7cec68a9367ce7e4ae9&#34;,&#34;date&#34;:&#34;2023-10-14T14:20:36.000Z&#34;,&#34;tags&#34;:[&#34;安卓逆向&#34;,&#34;Smali&#34;,&#34;Java&#34;],&#34;id&#34;:&#34;dalvik虚拟机解释语言smali&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Java&#34;,&#34;icon&#34;:[&#34;/skillicons/Java-Light.svg&#34;,&#34;/skillicons/Java-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;[官方文档地址](https://kotlinlang.org/docs/basic-types.html)\n\n# 基本数据类型\n\n## Number\n\n1. 数字中间可以用_拼接增加可读性，如：123_000、123_000.000_123\n2. 使用类型+?标记数据可为空，当为可空时，每次赋值都是一个新的引用地址，此时使用===返回false，但是在JVM环境下，会对-128至127的数字做内&#34;,&#34;title&#34;:&#34;kotlin学习-数据类型&#34;,&#34;uuid&#34;:&#34;5ba2cb4d17e2078577406387b89c031c&#34;,&#34;date&#34;:&#34;2022-08-22T14:34:04.000Z&#34;,&#34;tags&#34;:[&#34;Kotlin&#34;,&#34;Android&#34;],&#34;id&#34;:&#34;kotlin学习-数据类型&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Kotlin&#34;,&#34;icon&#34;:[&#34;/skillicons/Dart-Light.svg&#34;,&#34;/skillicons/Dart-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;通常使用`三元表达式转switch语句`的代码可以完成大部分的三元表达式代码美化需求，但是如果三元表达式的判断条件不是连续数字时，此时更适合转为if/else语句，如代码：\n\n```javascript\nfunction _$du() {\n  var _$$I;\n  _$$I = _$gf[++_$f1];\n  _$$I <= 37\n    ? _$$I <= 24\n      ? (_$fx =&#34;,&#34;title&#34;:&#34;AST交互-非连续判断三元表达式转if语句&#34;,&#34;uuid&#34;:&#34;4bc53a5b9eecf05a4b058e1270254f33&#34;,&#34;date&#34;:&#34;2022-08-20T20:58:33.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;,&#34;Babel&#34;,&#34;逆向&#34;,&#34;AST&#34;],&#34;id&#34;:&#34;ast交互-非连续判断三元表达式转if语句&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Babel&#34;,&#34;icon&#34;:[&#34;/skillicons/Babel.svg&#34;,&#34;/skillicons/Babel.svg&#34;]}]},{&#34;description&#34;:&#34;这两年前端代码加密进化很大，为了在逆向过程中不那么累，我们需要使用babel修改网站源码，改成我们调试不那么累的代码，如将三元表达式语句代码改成switch语句代码。\n\n我们找到网站实际代码如下：\n\n```javascript\nif (_$j7 <= 63)\n  _$j7 <= 15 ? _$j7 <= 3 ? _$j7 <= 0 ? (_$kb = _$jA[--_$g3],\n  _$kb = &#34;,&#34;title&#34;:&#34;AST交互-三元表达式转switch语句&#34;,&#34;uuid&#34;:&#34;a2bebb691101731a269ea61fe005c107&#34;,&#34;date&#34;:&#34;2022-08-15T20:58:33.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;,&#34;Babel&#34;,&#34;逆向&#34;,&#34;AST&#34;],&#34;id&#34;:&#34;ast交互-三元表达式转switch语句&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Babel&#34;,&#34;icon&#34;:[&#34;/skillicons/Babel.svg&#34;,&#34;/skillicons/Babel.svg&#34;]}]},{&#34;description&#34;:&#34;这两年前端代码加密进化很大，为了在逆向过程中不那么累，我们需要使用babel修改网站源码，改成我们调试不那么累的代码，如将if语句代码改成switch语句代码。\n\n我们找到网站实际代码如下：\n\n```javascript\nwhile (1) {\n  _$a9 = _$kI[_$iW++];\n  if (_$a9 < 12) {\n    if (_$a9 < 4) {\n      if (_$a9 &#34;,&#34;title&#34;:&#34;AST交互-if语句转switch语句&#34;,&#34;uuid&#34;:&#34;09cb2120c787795e556b782874ed43ec&#34;,&#34;date&#34;:&#34;2022-08-13T20:58:33.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;,&#34;Babel&#34;,&#34;逆向&#34;,&#34;AST&#34;],&#34;id&#34;:&#34;ast交互-if语句转switch语句&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Babel&#34;,&#34;icon&#34;:[&#34;/skillicons/Babel.svg&#34;,&#34;/skillicons/Babel.svg&#34;]}]},{&#34;description&#34;:&#34;## 资源\n\n官方文档：https://babeljs.io/docs/babel-traverse\n\nK哥文章：https://mp.weixin.qq.com/s/fIbPuNMs5FRADJE5MOZXgA\n\n## 说明\n\n安装命令: `npm install --save @babel/traverse`\n\n`@babel/traverse`是babel的核心组件之一，需要与`@babel&#34;,&#34;title&#34;:&#34;\\@babel|traverse使用教程&#34;,&#34;uuid&#34;:&#34;c501399806dcdf7a3e7cb3d3552ecfd1&#34;,&#34;date&#34;:&#34;2022-08-12T20:58:33.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;,&#34;Babel&#34;,&#34;逆向&#34;,&#34;AST&#34;],&#34;id&#34;:&#34;babeltraverse阅读笔记&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Babel&#34;,&#34;icon&#34;:[&#34;/skillicons/Babel.svg&#34;,&#34;/skillicons/Babel.svg&#34;]}]},{&#34;description&#34;:&#34;## 资源\n\n官方文档：https://babeljs.io/docs/babel-types\n\n## 说明\n\n`@babel/types`这个包对于搞`TypeScript`肯定熟悉，写ts肯定会引入一个types的包，用到的类型定义都是从这个包导出来，`@babel/types`除了提供类型外还提供了对应的检测方法与构造方法。\n\n包引入：`const t = require(\&#34;@babel/t&#34;,&#34;title&#34;:&#34;\\@babel|types使用教程&#34;,&#34;uuid&#34;:&#34;0b89d32afdac7a92cec8746f9b6ab53c&#34;,&#34;date&#34;:&#34;2022-08-10T13:09:33.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;,&#34;Babel&#34;,&#34;逆向&#34;,&#34;AST&#34;],&#34;id&#34;:&#34;babeltypes阅读笔记&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Babel&#34;,&#34;icon&#34;:[&#34;/skillicons/Babel.svg&#34;,&#34;/skillicons/Babel.svg&#34;]}]},{&#34;description&#34;:&#34;## 资源\n\n官方文档：https://www.babeljs.cn/docs/babel-parser\n\n在线AST工具：https://astexplorer.net/\n\n## 说明\n\n`@babel/parser`是Babel最重要的包之一，用于词法分析，即将JavaScript代码转换成AST树，最常见的就是前端中配合webpack打包代码。\n\n包安装：`npm install @babe&#34;,&#34;title&#34;:&#34;\\@babel|parser使用教程&#34;,&#34;uuid&#34;:&#34;9e3e7defd6ffc7d690836a0347cb44a4&#34;,&#34;date&#34;:&#34;2022-08-09T20:58:33.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;,&#34;Babel&#34;,&#34;逆向&#34;,&#34;AST&#34;],&#34;id&#34;:&#34;babelparser阅读笔记&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Babel&#34;,&#34;icon&#34;:[&#34;/skillicons/Babel.svg&#34;,&#34;/skillicons/Babel.svg&#34;]}]},{&#34;description&#34;:&#34;## 前言\n\n我们用ssh公钥与git仓库做代码存储交互，提供代码存管的平台有很多，如Github、Bitbucket、Gitlab等，通常我们生成一次key后在多平台共用，但是如果是单个平台就有多个用户管理多个仓库时这种方式就不适用了。\n\n网上有很多这方面的教程，中文的基本上都是这个抄袭那个抄来抄去，还云里雾里，因此做下记录，提供用法来源和使用示例\n\n可直接访问[ssh_config](http&#34;,&#34;title&#34;:&#34;使用ssh_config管理ssh密钥&#34;,&#34;uuid&#34;:&#34;1b294f81fac3b67f71d0c5f2b258c1a1&#34;,&#34;date&#34;:&#34;2022-07-21T09:31:55.000Z&#34;,&#34;tags&#34;:[&#34;Linux&#34;,&#34;Git&#34;],&#34;id&#34;:&#34;使用ssh_config管理ssh密钥&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Linux&#34;,&#34;icon&#34;:[&#34;/skillicons/Linux-Light.svg&#34;,&#34;/skillicons/Linux-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Git&#34;,&#34;icon&#34;:[&#34;/skillicons/Git.svg&#34;,&#34;/skillicons/Git.svg&#34;]}]},{&#34;description&#34;:&#34;[packer](https://github.com/wbthomason/packer.nvim)是一个功能强大且支持扩展的neovim插件管理工具，只要是基于neovim实现的ide全部是用packer来管理插件的，因此packer是学习nvim的必学插件。\n\n## packer自动安装\n\npacker是管理插件的插件，一般在init.vim或者init.lua中写入自动安装脚本，让nvim&#34;,&#34;title&#34;:&#34;nvim插件管理工具packer的使用&#34;,&#34;uuid&#34;:&#34;6143d6a665537f665afe6c71a41a930e&#34;,&#34;date&#34;:&#34;2022-05-13T00:53:32.000Z&#34;,&#34;tags&#34;:[&#34;Neovim&#34;,&#34;Lua&#34;],&#34;id&#34;:&#34;nvim插件管理工具packer的使用&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Neovim&#34;,&#34;icon&#34;:[&#34;/skillicons/NeoVim-Light.svg&#34;,&#34;/skillicons/NeoVim-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Lua&#34;,&#34;icon&#34;:[&#34;/skillicons/Lua-Light.svg&#34;,&#34;/skillicons/Lua-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;## Object.getOwnPropertyDescriptor(obj, prop)\n\n用于获取对象属性的描述符（descriptor）的方法。描述符包括属性的可写性、可枚举性、可配置性等信息，该方法只返回对象其本身，不会获取原型链上的属性。\n\n### 入参\n\n* `obj`：要获取属性描述符的对象。\n* `prop`：要获取描述符的属性名。\n\n### 返回\n\n返回描述符（descripto&#34;,&#34;title&#34;:&#34;JavaScript高级属性之Object&#34;,&#34;uuid&#34;:&#34;9762fb861a9e19487c93ec474652b24d&#34;,&#34;date&#34;:&#34;2022-04-27T15:59:11.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;],&#34;id&#34;:&#34;javascript高级属性之object&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;## 什么是NeoVim\n\n官方介绍如下：\n\n> Neovim is a refactor, and sometimes redactor, in the tradition of Vim (which itself derives from Stevie). It is not a rewrite but a continuation and extension of Vim. Many clo&#34;,&#34;title&#34;:&#34;NeoVim-安装&#34;,&#34;uuid&#34;:&#34;12480812c42021f5233cd2b060f66e69&#34;,&#34;date&#34;:&#34;2022-04-15T23:50:32.000Z&#34;,&#34;tags&#34;:[&#34;Neovim&#34;,&#34;Vim&#34;],&#34;id&#34;:&#34;neovim-安装&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Neovim&#34;,&#34;icon&#34;:[&#34;/skillicons/NeoVim-Light.svg&#34;,&#34;/skillicons/NeoVim-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Vim&#34;,&#34;icon&#34;:[&#34;/skillicons/VIM-Light.svg&#34;,&#34;/skillicons/VIM-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;math内置库用于数学计算，有如下常用方法：\n\n方法名 | 作用\n------ | ----\nabs | 绝对值\nacos | 反余弦\nasin | 反正弦\natan | 反正切\ncos | 余弦\nsin | 正弦\ntan | 正切\nceil | 向上取整\nfloor | 向下取整\nsqrt | 平方根\ndeg | 弧度转角度\nrad | 角度转弧度\nhuge | 无限大\nmax | 最大值\nmi&#34;,&#34;title&#34;:&#34;lua的math内置库&#34;,&#34;uuid&#34;:&#34;5ee4322e90fc7bf9074350c3191b09ed&#34;,&#34;date&#34;:&#34;2022-04-13T23:19:50.000Z&#34;,&#34;tags&#34;:[&#34;Lua&#34;],&#34;id&#34;:&#34;lua的math内置库&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Lua&#34;,&#34;icon&#34;:[&#34;/skillicons/Lua-Light.svg&#34;,&#34;/skillicons/Lua-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;## byte\n\n**string.byte(s [, i [, j]])**\n**s:byte([i [, j]])**\n\n返回字符串指定字符下标的ASCII码，i为起点下标（默认为1），j为终点下标，如：\n\n```lua\n> string.byte(\&#34;ABCDE\&#34;, 2, 5)\n66\t67\t68\t69\n-- 返回的是BCDE的ASCII码，可通过结构赋值赋予其它变量\n```\n\n## char\n&#34;,&#34;title&#34;:&#34;lua的string内置库&#34;,&#34;uuid&#34;:&#34;508ad0d0ecefac3c2cdf7d658247f9bb&#34;,&#34;date&#34;:&#34;2022-04-12T23:16:51.000Z&#34;,&#34;tags&#34;:[&#34;Lua&#34;],&#34;id&#34;:&#34;lua的string内置库&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Lua&#34;,&#34;icon&#34;:[&#34;/skillicons/Lua-Light.svg&#34;,&#34;/skillicons/Lua-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;> lua是非常流行的胶水语言，由于它语法简单易于学习，常用来编写游戏脚本、算法程序、配置程序，如配合nginx使用、配置neovim等，这里学习lua主要是用来配置neovim。\n\n## 0. 注释\n\n1. 单行注释：`-- 单行注释`\n2. 多行注释：\n```lua\n--[[\n    多行注释\n--]]\n```\n\n## 1. 变量定义\n\n1. 数值：`num = 42`\n2. 字符串：\n   &#34;,&#34;title&#34;:&#34;lua基本语法&#34;,&#34;uuid&#34;:&#34;b65532707c531245e3f2171cd138cb46&#34;,&#34;date&#34;:&#34;2022-04-11T23:06:04.000Z&#34;,&#34;tags&#34;:[&#34;Lua&#34;],&#34;id&#34;:&#34;lua基本语法&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Lua&#34;,&#34;icon&#34;:[&#34;/skillicons/Lua-Light.svg&#34;,&#34;/skillicons/Lua-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# RN脚手架打包乱码问题定位修复\n\n## 前言\n\n用车内插(RN项目)打包大概率乱码真是让人仍无可忍, 该项目基于公司内部yrn脚手架, 由于公司内部项目只能我们自己动手了, 最后虽然找到了问题出现的原因, 但是考虑到很多人遇到脚手架的问题就望而却步, 因此blog记录下定位问题的整个过程, 希望能帮助到其他同学.\n\n该过程会从最基本的开始入手, 尽量不漏过每一个步骤, 也可直接前往问题修复查看&#34;,&#34;title&#34;:&#34;RN脚手架打包乱码问题定位修复&#34;,&#34;uuid&#34;:&#34;012f387b5ec1710029f2d25e7f48974d&#34;,&#34;date&#34;:&#34;2022-04-06T22:30:30.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;NodeJS&#34;,&#34;Debugger&#34;],&#34;id&#34;:&#34;rn脚手架打包乱码问题定位修复&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]},{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;mac电脑系统中自带python环境, 由于公司标机的原因, 我们虽然有python环境但是由于没有权限却不能装模块. 通过该教程引导零基础python环境搭建.\n\n那我们就开始吧!\n\n## pyenv\n\n该环境基于pyenv, pyenv作用和nvm类似, 有它可以很好得管理python版本.\n\npyenv插件化设计配合pyenv-virtualenv插件可以很好的实现virtualenv的能力&#34;,&#34;title&#34;:&#34;基于pyenv的python环境搭建&#34;,&#34;uuid&#34;:&#34;0c8e2def8a42328de9e337ea7ed6f8d5&#34;,&#34;date&#34;:&#34;2022-03-24T22:29:35.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;],&#34;id&#34;:&#34;基于pyenv的python环境搭建&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;> React Native开发中遇到的一些问题与技巧, 特此摘记^_^\n\n# 一. 组件相关技巧\n\n## Animated\n\n1. `Animated.View`中`opacity`和`pointerEvents`共用时, 经历过`opacity`变更后`pointerEvent`失效, 原因是react native的性能优化导致的, 可加参数`collapsable={false}`阻止优化&#34;,&#34;title&#34;:&#34;ReactNative开发问题及技巧&#34;,&#34;uuid&#34;:&#34;01de68cb6256d0941791324fcf9caa08&#34;,&#34;date&#34;:&#34;2021-12-23T23:57:52.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;,&#34;ReactNative&#34;,&#34;JavaScript&#34;],&#34;id&#34;:&#34;reactnative开发问题及技巧&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]},{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;## 什么是AES\n\n> **高级加密标准**（英语：Advanced Encryption Standard，缩写：AES），又称Rijndael加密法（荷兰语发音： [ˈrɛindaːl]，音似英文的“Rhine doll”），是美国联邦政府采用的一种区块加密标准。这个标准用来替代原先的DES，已经被多方分析且广为全世界所使用。经过五年的甄选流程，高级加密标准由美国国家标准与技术研究院（NIS&#34;,&#34;title&#34;:&#34;基于AES的密文加解密&#34;,&#34;uuid&#34;:&#34;122e82e07535495902ae07d92674483a&#34;,&#34;date&#34;:&#34;2021-11-15T16:31:47.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;密码学&#34;,&#34;信息安全&#34;],&#34;id&#34;:&#34;基于aes的密文加解密&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 错误来源\n\npip安装dukpy时报错`pip3 install --user dukpy`\n\n```\n  × Running setup.py install for dukpy did not run successfully.\n  │ exit code: 1\n  ╰─> [262 lines of output]\n      running install\n      running &#34;,&#34;title&#34;:&#34;pip安装时编译失败问题&#34;,&#34;uuid&#34;:&#34;7b05a4e794afa47d46fb5a77b2720d9e&#34;,&#34;date&#34;:&#34;2021-08-03T15:37:31.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Pip&#34;],&#34;id&#34;:&#34;pip安装时编译失败问题&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;## 自定义指令\n\n1. 定义:\n```js\napp.directive('name', {\n  // 在元素的 attribute 或事件侦听器应用之前调用\n  created(el, binding, vnode) {},\n  // 指令绑定到元素后发生。只发生一次, 同2.x的bind\n  beforeMount(el, binding, vnode) {},\n  // 元素插入父 DOM &#34;,&#34;title&#34;:&#34;vue3学习笔记&#34;,&#34;uuid&#34;:&#34;d27e33813d954991ae054fa6e33616bb&#34;,&#34;date&#34;:&#34;2021-06-13T23:50:20.000Z&#34;,&#34;tags&#34;:[&#34;Vue&#34;,&#34;JavaScript&#34;],&#34;id&#34;:&#34;vue3学习笔记&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Vue&#34;,&#34;icon&#34;:[&#34;/skillicons/Vue.svg&#34;,&#34;/skillicons/Vue.svg&#34;]},{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;1. ref传入函数, 使用同react\n2. 异步引入需要使用助手函数`defineAsyncComponent`包裹, 选项用法时`loader`替代`component`\n```js\nconst asyncModal = defineAsyncComponent(() => import('./path/to/*.vue'));\n// 或\nconst asyncModalWithOption&#34;,&#34;title&#34;:&#34;vue3新特性&#34;,&#34;uuid&#34;:&#34;be8be80fa6de0e67a3cbd7f3781b56f6&#34;,&#34;date&#34;:&#34;2021-06-13T23:45:34.000Z&#34;,&#34;tags&#34;:[&#34;Vue&#34;,&#34;JavaScript&#34;],&#34;id&#34;:&#34;vue3新特性&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Vue&#34;,&#34;icon&#34;:[&#34;/skillicons/Vue.svg&#34;,&#34;/skillicons/Vue.svg&#34;]},{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 目录\n\n- [引子](#引子)\n- [如何编写脚本](#如何编写脚本)\n  - [1. 第一步当然是选择一款趁手的语言](#_1-第一步当然是选择一款趁手的语言)\n  - [2. 构建执行环境](#_2-构建执行环境)\n  - [3. 需求分析](#_3-需求分析)\n  - [4. 编写脚本](#_4-编写脚本)\n    - [4-1. 代码调试方法](#_4-0-代码调试方法)\n    - &#34;,&#34;title&#34;:&#34;工具脚本项目构建-NodeJS&#34;,&#34;uuid&#34;:&#34;94f38d878a6fae162630f723fa3bfbb1&#34;,&#34;date&#34;:&#34;2020-12-08T22:28:10.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;],&#34;id&#34;:&#34;工具脚本项目构建-nodejs&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\n最近一直在使用React Hooks的相关API, 当时使用时有这样的一个疑惑:\n\n> 在函数组件内定义的变量总是会在组件刷新时重新赋值, 但是调用useMemo或者useCallback等Hooks API返回的却不会?\n\n由于拖延症, 一直没有进去一探究竟, 直到今天阿里面试的时候遇到类似问题:\n\n> 用useMemo或者useCallback等Hooks API初始化的数据保存在&#34;,&#34;title&#34;:&#34;React-Hooks源码阅读&#34;,&#34;uuid&#34;:&#34;25ac6a5416a30d5f8794ac0013015dc9&#34;,&#34;date&#34;:&#34;2020-05-09T16:01:22.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;React&#34;,&#34;面经&#34;],&#34;id&#34;:&#34;react-hooks源码阅读&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]},{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 准备\n\n## 定义父类\n\n* 定义Father类和Mother类\n* Father会下象棋\n* Mother会做饭\n* Father和Mother都会吃东西\n\n```javascript\nfunction Father (name) {\n  this.name = name || 'Father';\n  this.gender = 'men';\n  this.chess = function &#34;,&#34;title&#34;:&#34;JavaScript的继承整理&#34;,&#34;uuid&#34;:&#34;bf915247499c9ff073b027c8c07cdf64&#34;,&#34;date&#34;:&#34;2020-05-08T09:24:21.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;],&#34;id&#34;:&#34;javascript的继承整理&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 应用场景\n\n现在代码管理一般使用git, precommit就是在git的commit操作前执行相关命令, 一般配合代码lint、prettier或commitlint使用, 配套的还有prepush、commit-msg等.\n\n# 文档\n\n使用husky实现`git hooks`功能\n\n项目地址: [husky Github](https://github.com/typicode/husk&#34;,&#34;title&#34;:&#34;项目规范化4-githooks的配置与使用&#34;,&#34;uuid&#34;:&#34;f8384efa33edd650550812cd3c256de1&#34;,&#34;date&#34;:&#34;2020-05-05T14:00:39.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;],&#34;id&#34;:&#34;项目规范化4-githooks的配置与使用&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 应用场景\n\n使用`git commit`时对Message的规范化, 不符合规范则阻止提交, 让项目更容易管理, 项目迭代也更清晰.\n\n# 文档\n\n项目地址: [commitlint Github](https://github.com/conventional-changelog/commitlint#readme)\n\n官网地址: [commitlint](https://commitlin&#34;,&#34;title&#34;:&#34;项目规范化3-commitlint配置和使用&#34;,&#34;uuid&#34;:&#34;41cf2a078fc44846f74b71a362a5a9a9&#34;,&#34;date&#34;:&#34;2020-05-05T10:36:06.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;],&#34;id&#34;:&#34;项目规范化3-commitlint配置和使用&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 应用场景\n\n一般使用在项目中使用lint后规避程序代码的不合法使用, 但每个程序员的代码都有其自己的风格, 为了让代码风格一致, 一般会在git提交之前格式化一遍代码, 而格式化代码的工具就是prettier.\n\n# 文档\n\n项目地址: [prettier Github](https://github.com/prettier/prettier)\n\n项目官网: [prettier](https&#34;,&#34;title&#34;:&#34;项目规范化2-prettier的配置与使用&#34;,&#34;uuid&#34;:&#34;9380e222af82958298ed92c3a03a3a52&#34;,&#34;date&#34;:&#34;2020-05-03T20:18:37.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;],&#34;id&#34;:&#34;项目规范化2-prettier的配置与使用&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 开始前的准备\n\n试验使用应用版本为`node v10.16.0`和`yarn v1.12.3`\n\n新建项目空文件夹, 初始化`package.json`, 使用命令`yarn init`\n\n初始化git, 使用命令`git init`\n\n# lint\n\n可以理解为是`代码书写规范`的检测工具, lint分为JSLint(《JavaScript语言精粹》有一章就是讲JSLint的)、JSHint&#34;,&#34;title&#34;:&#34;项目规范化1-lint配置与使用&#34;,&#34;uuid&#34;:&#34;20bef8ed0262fba89ce6ec0ae06cb602&#34;,&#34;date&#34;:&#34;2020-04-30T13:47:01.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;],&#34;id&#34;:&#34;项目规范化1-lint配置与使用&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\n题目定位是基础编程体, 考验受试者基础编程能力, [点击访问题目地址](https://github.com/LeetCode-OpenSource/hire/blob/master/foundations_zh.md)\n\n这个题目的附加加分项(除单元测试)通过其它文章分析!\n\n# 题目\n\n前端可以使用`try catch`捕捉报错堆栈信息, 一般会解析堆栈信息给后端处理, 传给后端的&#34;,&#34;title&#34;:&#34;力扣笔试题-解析报错堆栈为JSON格式&#34;,&#34;uuid&#34;:&#34;ddb8b0dbec7164e5335705cadc967c0a&#34;,&#34;date&#34;:&#34;2020-04-29T10:53:12.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;面经&#34;],&#34;id&#34;:&#34;力扣笔试题-解析报错堆栈为json格式&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\nleetcode有道题叫`用 Webpack 实现 predictable long term cache`, [点击访问](https://github.com/LeetCode-OpenSource/hire/blob/master/webpack_zh.md)\n\n`predictable long term cache`中文翻译就是`可预测的长效缓存`, 说白了就是代码切割(`C&#34;,&#34;title&#34;:&#34;力扣笔试题-Webpack的代码切割和长效化缓存(3版和4版)&#34;,&#34;uuid&#34;:&#34;3fb857d7259595f063a8a0b906f1c805&#34;,&#34;date&#34;:&#34;2020-04-28T08:23:30.000Z&#34;,&#34;tags&#34;:[&#34;Webpack&#34;,&#34;JavaScript&#34;,&#34;面经&#34;],&#34;id&#34;:&#34;力扣笔试题-webpack的代码切割和长效化缓存3版和4版&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Webpack&#34;,&#34;icon&#34;:[&#34;/skillicons/Webpack-Light.svg&#34;,&#34;/skillicons/Webpack-Dark.svg&#34;]},{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;JavaScript包含了一套小型的可用在标准类型上的标准方法集.\n\n# Array\n\n## array.concat(item...)\n\nconcat 方法产生一个新数组, 它包含一份array的浅复制(shallow copy)并把一个或多个参数item附加在其后. 如果参数item是一个数组, 那么它的每个元素会被分别添加.\n\n```javascript\nvar a = ['a', 'b',&#34;,&#34;title&#34;:&#34;JavaScript语言精粹-笔记6-方法&#34;,&#34;uuid&#34;:&#34;0a99e1c1ec426bf32c8ce5badb281bfc&#34;,&#34;date&#34;:&#34;2020-04-27T15:59:11.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;JavaScript语言精粹&#34;],&#34;id&#34;:&#34;javascript语言精粹-笔记6-方法&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 正则表达式(Regular Expressions)的定义\n\nJavaScript的许多特性都借鉴自其他语言. 语法借鉴自java, 函数借鉴自Scheme, 原型继承借鉴自Self, 正则表达式借鉴自Perl.\n\n正则表达式是一门简单语言的语法规范. 它应用在一些方法中, 对字符串中的信息实现查找、替换和提取操作. 可处理正则表达式的方法有`regexp.exec`、`regexp.test&#34;,&#34;title&#34;:&#34;JavaScript语言精粹-笔记5-正则表达式&#34;,&#34;uuid&#34;:&#34;d39e3a1e843c2c7dc8ee90ffe8c3d090&#34;,&#34;date&#34;:&#34;2020-04-27T11:45:54.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;JavaScript语言精粹&#34;],&#34;id&#34;:&#34;javascript语言精粹-笔记5-正则表达式&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 数组(Array)的定义\n\n* C实现的数组: 数组是一段线性分配的内存, 它通过整数计算偏移并访问其中的元素, 是一种性能出色的数据结构.\n* JavaScript的数组是伪数组, 是一种拥有一些类数组(array-like)特性的对象.\n* JavaScript将真数组的下标转换成字符串, 用其做为属性.\n\n# 数组字面量(Array Literals)\n\n通过数组字面量来创建数组, 继承&#34;,&#34;title&#34;:&#34;JavaScript语言精粹-笔记4-数组&#34;,&#34;uuid&#34;:&#34;a6e2996f3f0d28858a5210e72d52d875&#34;,&#34;date&#34;:&#34;2020-04-27T09:38:56.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;JavaScript语言精粹&#34;],&#34;id&#34;:&#34;javascript语言精粹-笔记4-数组&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 继承(Inheritance)\n\n在基于类的语言中, 对象是类的实例, 并且类可以从另一个类继承. JavaScript是一门基于原型的语言, 这意味着对象直接从其他对象继承.\n\n# 伪类(Pseudoclassical)\n\n文章没有对伪类做解释, 本人理解是JavaScript是没有类这个概念的, 但却实现了一套和类很相似的机制, 由于它本身并不是类的实现, 因此我们这里把这种实现称为伪类.&#34;,&#34;title&#34;:&#34;JavaScript语言精粹-笔记3-继承&#34;,&#34;uuid&#34;:&#34;9f211e723cc9f4622f4a99dcfa1ea657&#34;,&#34;date&#34;:&#34;2020-04-26T15:48:14.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;JavaScript语言精粹&#34;],&#34;id&#34;:&#34;javascript语言精粹-笔记3-继承&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 函数(Function)的定义\n\n* 函数就是对象, 或者说函数是种特殊的对象-函数对象(Function Objects)\n* 函数可以保存在变量、对象和数组中\n* 函数可以被当做参数传给其他函数, 函数也可以再返回函数\n* 函数的与众不同在于他可以被调用\n* 每个函数被创建时会附加两个隐藏属性: 函数的上下文和实现函数行为的代码\n\n下面是函数和对象的constructor的区别对比:\n\n`&#34;,&#34;title&#34;:&#34;JavaScript语言精粹-笔记2-函数&#34;,&#34;uuid&#34;:&#34;de192bb9429ceecba2cd216de984db85&#34;,&#34;date&#34;:&#34;2020-04-25T22:37:22.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;JavaScript语言精粹&#34;],&#34;id&#34;:&#34;javascript语言精粹-笔记2-函数&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 对象(Object)的定义\n\n* 对象是可变的键控集合(keyed collections)\n* 对象是属性的容器, 其中每个属性都有名字和值\n* 除了简单数据类型(数字、字符串、布尔值、null、undefined), 其它都是对象\n* 数字、字符串和布尔值虽然拥有方法, 但是是不可变的, 所以不是对象\n* 对象是无类型(class-free)的, 它对新属性的名字和属性的值没有限制\n\n# &#34;,&#34;title&#34;:&#34;JavaScript语言精粹-笔记1-对象&#34;,&#34;uuid&#34;:&#34;f123b023b6f45a68a3ceae2dfb603b23&#34;,&#34;date&#34;:&#34;2020-04-25T17:50:26.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;JavaScript语言精粹&#34;],&#34;id&#34;:&#34;javascript语言精粹-笔记1-对象&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;从2019年09月31日从老公司离职后到现在差不多有7个月了，在这段时间虽然也没闲着，刚开始热情满满得学习金融证券知识和信息安全相关知识，当然都是兴趣爱好，并思考如何用技术进行选股，因为我相信股市上总有不可抗拒的力量在让行情往着某些规律变化，更相信这个东西一定可以实现自己的价值，这多么的让人兴奋。抱着这个幼稚的想法，从新浪、搜狐、东方财富等网站采集股票数据并保存在自己的数据库中，想法很简单，就是通&#34;,&#34;title&#34;:&#34;JavaScript语言精粹-笔记0-前言&#34;,&#34;uuid&#34;:&#34;1f1b9627e37138e72d72cc04f56c23b0&#34;,&#34;date&#34;:&#34;2020-04-25T13:59:10.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;JavaScript语言精粹&#34;],&#34;id&#34;:&#34;javascript语言精粹-笔记0-前言&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;中国除了地图上的那条国境线, 互联网上还有一条, 地图上的国境线是我们中国人的骄傲, 这是祖国给我们的安全感, 但互联网上的那条却一直饱受诟病.\n\n　　事物不分好怀, 事物的存在自然也有它的道理, 这里没有对GWF有很大的反对意见, 也没有资格去评判GWF, 只是就是论事的讨论下自己的想法.\n\n　　GWF的出现有很大的战略意义, 今后的世界也一定是围绕着互联网转的, 谁主导网络世界谁就将是今后世界&#34;,&#34;title&#34;:&#34;关于服务器被封禁的一点想法&#34;,&#34;uuid&#34;:&#34;779475a7da877f1f7a133cb860b21b3c&#34;,&#34;date&#34;:&#34;2020-04-20T14:23:16.000Z&#34;,&#34;tags&#34;:[&#34;生活&#34;],&#34;id&#34;:&#34;关于服务器被封禁的一点想法&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 对Object的理解\n\n> **什么是 Subject？** - RxJS Subject 是一种特殊类型的 Observable，它允许将值多播给多个观察者，所以 Subject 是**多播**的，而普通的 Observables 是单播的(每个已订阅的观察者都拥有 Observable 的独立执行)。\n\n1. Subjects are multicast(Subject是多播的).\n2. &#34;,&#34;title&#34;:&#34;RxJS速记笔记4-Subject&#34;,&#34;uuid&#34;:&#34;0d738a362c9c00bd90284faeb347bb18&#34;,&#34;date&#34;:&#34;2020-04-19T18:20:25.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;RxJS&#34;],&#34;id&#34;:&#34;rxjs速记笔记4-subject&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;**RxJS的数据处理工具集合**\n\n1. 引入方式: `import { name } from 'rxjs/operators';`\n2. 使用方式(放在pipe里面): `observable.pipe(map(x => x), ...);`\n\n常用工具函数有如下:\n\n```typescript\n// 与原生map函数类似\nmap(x => x)\n// map是处理每个值, mapTo是返回&#34;,&#34;title&#34;:&#34;RxJS速记笔记3-Operators&#34;,&#34;uuid&#34;:&#34;3af545082f124f6848ba157c02f27792&#34;,&#34;date&#34;:&#34;2020-04-17T18:15:29.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;RxJS&#34;],&#34;id&#34;:&#34;rxjs速记笔记3-operators&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\nLeetCode技术栈里包括RxJS, 有一道笔试题也是关于RxJS的, 学习了以后感受到了RxJS的精妙, 学习笔记记下来方便日后查阅.\n\n# Observable与Observer的关系\n\nObservable是订阅主体, Observer是订阅者, Observable包含对数据的一系列处理, 最后发送给Observer.\n\nObservable与Observer的代码关系: `&#34;,&#34;title&#34;:&#34;RxJS速记笔记2-Observable与Observer&#34;,&#34;uuid&#34;:&#34;0aea8c3270c5f96b9726f41575fbf82b&#34;,&#34;date&#34;:&#34;2020-04-16T17:15:05.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;RxJS&#34;],&#34;id&#34;:&#34;rxjs速记笔记2-observable与observer&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\nRxJS是迭代器模式与观察者模式的具体实现, 之前看C++ STL有看到过有关迭代器的实现原理, 迭代器模式在RxJS里感觉应用的还是很彻底的..\n\nRxJS对观察者模式的应用在现实前端开发中应用广泛, 可以节省很多的代码, 确实是个好东西.\n\n现在RxJS已经是第6版了, 用途广泛, 在其它语言都有它对应的版本, 学一遍API就可以用在多个语言上和ORM这个宝贝一样, 让人期待!\n\n&#34;,&#34;title&#34;:&#34;RxJS速记笔记1-前言&#34;,&#34;uuid&#34;:&#34;c7dca85c4011b239389c02800e09f74a&#34;,&#34;date&#34;:&#34;2020-04-15T17:15:05.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;RxJS&#34;],&#34;id&#34;:&#34;rxjs速记笔记1-前言&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;Hook API是React 16.8的新特性, 可以让我们可以在函数组件中使用state及其它特性.\n\n# 基础Hook\n\n## useState\n\n生成state值与修改state值的函数, 传入默认值, 返回值与操作函数.\n\n使用方式: `const [state, setState] = useState(initialState);`\n\n## useEffect\n\n用于模拟类组件的`co&#34;,&#34;title&#34;:&#34;Redex-Hooks&#34;,&#34;uuid&#34;:&#34;663cef74409095be0875a2c72af4b850&#34;,&#34;date&#34;:&#34;2019-10-24T15:57:39.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;React&#34;],&#34;id&#34;:&#34;react-hooks&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]},{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;应`React16.8+`增加的`Hooks API`, `React Redux`增加API用于同步`connect()`的功能\n\n需要用到的引用:\n\n```javascript\nimport {\n  shallowEqual,\n  useSelector,\n  useDispatch,\n  useStore,\n} from 'react-redux';\n```\n\n# useSelector()&#34;,&#34;title&#34;:&#34;Redex-Hooks&#34;,&#34;uuid&#34;:&#34;00654eff02a1c164ca0315fa944c392c&#34;,&#34;date&#34;:&#34;2019-10-24T11:57:39.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;,&#34;Redux&#34;],&#34;id&#34;:&#34;redex-hooks&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Redux&#34;,&#34;icon&#34;:[&#34;/skillicons/Redux.svg&#34;,&#34;/skillicons/Redux.svg&#34;]}]},{&#34;description&#34;:&#34;# tsconfig.json配置\n\n```javascript\n{\n  \&#34;compilerOptions\&#34;: {\n\n    /* Basic Options */\n    \&#34;target\&#34;: \&#34;es5\&#34;,                       /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'E&#34;,&#34;title&#34;:&#34;TypeScript学习笔记-tsconfig配置&#34;,&#34;uuid&#34;:&#34;e95c3ef62d87d5a06fac3daa16cb3b35&#34;,&#34;date&#34;:&#34;2019-10-18T12:27:33.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;TypeScript&#34;],&#34;id&#34;:&#34;typescript学习笔记-tsconfig配置&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]},{&#34;tag&#34;:&#34;TypeScript&#34;,&#34;icon&#34;:[&#34;/skillicons/TypeScript.svg&#34;,&#34;/skillicons/TypeScript.svg&#34;]}]},{&#34;description&#34;:&#34;# tsconfig.json配置\n\n```javascript\n{\n  \&#34;compilerOptions\&#34;: {\n\n    /* 基本选项 */\n    \&#34;target\&#34;: \&#34;es5\&#34;,                       // 指定 ECMAScript 目标版本: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', or 'ES&#34;,&#34;title&#34;:&#34;TypeScript学习笔记&#34;,&#34;uuid&#34;:&#34;4727ddd7e324b2a68f1a979ed76ab676&#34;,&#34;date&#34;:&#34;2019-10-10T12:27:33.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;TypeScript&#34;],&#34;id&#34;:&#34;typescript学习笔记&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]},{&#34;tag&#34;:&#34;TypeScript&#34;,&#34;icon&#34;:[&#34;/skillicons/TypeScript.svg&#34;,&#34;/skillicons/TypeScript.svg&#34;]}]},{&#34;description&#34;:&#34;# Container\n\n## 属性\n\n### alignment\n\n> 用于定位子(child)组件的显示位置, 值为Alignment对象;\n\n#### Alignment\n\n> 继承关系: Object > AlignmentGeometry > Alignment\n\n1. 方法定义: `const Alignment(x, y)`\n2. 快捷属性关系`Alignment.center`:\n&#34;,&#34;title&#34;:&#34;Flutter学习4-基础组件&#34;,&#34;uuid&#34;:&#34;76e02567565080882ad08d046f4de7c7&#34;,&#34;date&#34;:&#34;2019-03-10T19:53:54.000Z&#34;,&#34;tags&#34;:[&#34;Flutter&#34;],&#34;id&#34;:&#34;flutter学习4-基础组件&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Flutter&#34;,&#34;icon&#34;:[&#34;/skillicons/Flutter-Light.svg&#34;,&#34;/skillicons/Flutter-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 关于调试\n\n相信很多人对程序调试都非常看中, 也有很多同仁认为调试能力比编码能力还重要, 我就是其中一个, 如果某种语言多年使用经历却连基础的调试技巧都不会, 那其实与应届实习生没多大区别的.\n\n看了Container Widget后, 可以拿示例跑代码就赶紧看Flutter的调试了, 详细之前学JavaScript是在浏览器上输出一个事件对象后一个劲往他的原型链点想一探究竟, 之后接触了GD&#34;,&#34;title&#34;:&#34;Flutter学习3-调试&#34;,&#34;uuid&#34;:&#34;a68299b7e3e68ff84aa0f8f3d8e51548&#34;,&#34;date&#34;:&#34;2019-03-09T18:17:26.000Z&#34;,&#34;tags&#34;:[&#34;Flutter&#34;],&#34;id&#34;:&#34;flutter学习3-调试&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Flutter&#34;,&#34;icon&#34;:[&#34;/skillicons/Flutter-Light.svg&#34;,&#34;/skillicons/Flutter-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 创建与运行等常用命令\n\n1. 命令行创建项目: `flutter create myapp`\n2. 检查连接的设备: `flutter devices`\n3. 打包并运行程序:\n  * 调试(debug)模式运行, 包含所有调试方式: `flutter run`\n  * 生产(nodebug)模式启动, 关闭调试: `flutter run --release`\n  * 中间(in-betwe&#34;,&#34;title&#34;:&#34;Flutter学习2-项目运行&#34;,&#34;uuid&#34;:&#34;429fa66bf0c6a4a0f46526a2b572154b&#34;,&#34;date&#34;:&#34;2019-03-07T17:56:34.000Z&#34;,&#34;tags&#34;:[&#34;Flutter&#34;],&#34;id&#34;:&#34;flutter学习2-项目运行&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Flutter&#34;,&#34;icon&#34;:[&#34;/skillicons/Flutter-Light.svg&#34;,&#34;/skillicons/Flutter-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 事情由来\n\n同事昨天问我docker文件可不可以启动容器的情况下动态挂载(即启动时的-v命令对应功能), 我告诉他可以试试如下方式完成这个需求, 举例如下:\n\n1. 容器加-v命令启动后, -v命令其实就是一个映射关系, 宿主机文件系统找到对应映射目录, 根据实现原理处理(如ln命令);\n\n没试过, 不过因为记忆中之前有从宿主机的docker容器对应文件系统中拷贝过文件出来, 但由于两年之前的&#34;,&#34;title&#34;:&#34;Docker动态挂载&#34;,&#34;uuid&#34;:&#34;b2f2ab77f1efd0447415ffafd8802543&#34;,&#34;date&#34;:&#34;2019-03-07T10:41:37.000Z&#34;,&#34;tags&#34;:[&#34;Docker&#34;],&#34;id&#34;:&#34;docker动态挂载&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Docker&#34;,&#34;icon&#34;:[&#34;/skillicons/Docker.svg&#34;,&#34;/skillicons/Docker.svg&#34;]}]},{&#34;description&#34;:&#34;# 环境说明\n\n1. 系统信息: ubuntu16.04\n2. 使用命令`sha256sum`查看文件hash值;\n2. 必备下载\n3. 解压文件: tar.xz(`tar xf /path/file`), zip(`unzip /path/file`)\n\n# 安装Flutter\n\n1. 下载Flutter工具包[Flutter SDK](https://storage.googleapis.co&#34;,&#34;title&#34;:&#34;Flutter学习1-环境配置&#34;,&#34;uuid&#34;:&#34;fc16d45e1721be3d728b926a59064419&#34;,&#34;date&#34;:&#34;2019-03-05T13:07:06.000Z&#34;,&#34;tags&#34;:[&#34;Flutter&#34;],&#34;id&#34;:&#34;flutter学习1-环境配置&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Flutter&#34;,&#34;icon&#34;:[&#34;/skillicons/Flutter-Light.svg&#34;,&#34;/skillicons/Flutter-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 基本信息\n\n1. **职位**: React前端开发工程师\n2. **坐标**: 上海杨浦\n3. **经验**: 1年及以上React实际项目经历\n4. **入职时间**: 可年后入职\n\n# 公司及团队介绍\n\n* 公司与各大证券公司合作并提供技术支持, 总部在上海, 于深圳和广西都设有分公司.\n* 公司内部主要使用Vue和React作为前端开发框架, 没有技术选型约束, 只要技术更好服务于业务&#34;,&#34;title&#34;:&#34;招React,不容错过&#34;,&#34;uuid&#34;:&#34;68b42be6c862a29a5aa74b5357448c53&#34;,&#34;date&#34;:&#34;2019-01-20T13:34:52.000Z&#34;,&#34;tags&#34;:[&#34;招聘&#34;],&#34;id&#34;:&#34;招聘启示&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 前言\n\n* 项目地址: [react-stockcharts](https://github.com/rrag/react-stockcharts)\n* demo地址: [react-stockcharts-examples2](https://github.com/rrag/react-stockcharts-examples2)\n\n# 代码分析\n\n## 项目目录\n\n```\n./react-&#34;,&#34;title&#34;:&#34;react-stockcharts源码阅读&#34;,&#34;uuid&#34;:&#34;b831e55851aa3d1317e47122f277f968&#34;,&#34;date&#34;:&#34;2018-06-27T17:59:31.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;],&#34;id&#34;:&#34;源码阅读-react-stockcharts&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\n> 通过本文可以学到如下高级知识\n> 1. 模块原理(babel转换原理)\n> 2. 源码阅读与跟踪方式\n> 3. 逗号表达式的应用\n> 4. 原生方法写React组件\n> 5. React中history在外部使用\n\nReact项目中react-router也是非常重要的一部分, 但由于用法简单可以参照官网案例使用, 一般配置好就很少改动.\n\n在react-router V3中提供b&#34;,&#34;title&#34;:&#34;源码阅读-react-router-dom&#34;,&#34;uuid&#34;:&#34;5ca0d343ccf32a527b276de2380b9697&#34;,&#34;date&#34;:&#34;2018-06-24T10:26:23.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;],&#34;id&#34;:&#34;源码阅读-react-router-dom&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;<!--\n# 自我介绍\n\n* 姓名: Rnet-Ao, rnet(/rən't/), 涛子\n* 博客: `http://howduudu.me/blog` (记录一些Python和前端的干货)\n* 来自: 江西上饶\n* 三字经: 敢扛事, 专技术, 好专研, 追真相, 重情义\n* 喜欢的书: 《皮皮鲁总动员》, 《冒险小虎队》 -> 《斗罗大陆》, 《斗破苍穹》 -> 《活着》 -> 后话(《禅与&#34;,&#34;title&#34;:&#34;React内部分享&#34;,&#34;uuid&#34;:&#34;eb6103906113f30322076d07daa712a3&#34;,&#34;date&#34;:&#34;2018-06-03T22:39:44.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;],&#34;id&#34;:&#34;react内部分享&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 申明\n\n网上原理讲解很多, 但涉及redux架构设计的却很少, 此总结教程通过以往项目经验与研究实验得出, 转载请注明出处.\n\n包含完整的项目结构图与示例代码, 代码略有删减与过滤.\n\ndva集成了redux/saga/mock/webpack配置等功能, 推荐试用.\n\n# 资料推荐\n\n> 如示例代码一知半解可以先看资料推荐的内容\n\n* [redux的github地址](https://git&#34;,&#34;title&#34;:&#34;redux在react中的应用&#34;,&#34;uuid&#34;:&#34;eb333f8acf971b7fa63a8ae1b8bf9636&#34;,&#34;date&#34;:&#34;2018-05-29T02:04:23.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;,&#34;JavaScript&#34;],&#34;id&#34;:&#34;redux在react中的应用&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]},{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 面试题与答案\n* 有三个箱子, 一个装苹果, 一个装梨子, 一个混合着装, 现在给每个箱子贴标签, 标签分别为苹果、梨子和混合, 但是都不贴正确, 及梨子标签的箱子不能放梨子, 问: 最少取多少次能将三个箱子具体装什么分清?\n\n> 从苹果箱子取, 如果取出来的是苹果, 则苹果标签里装的是混合, 梨子标签里装的是苹果, 混合标签里装的是梨子.  \n> 从混合标签里取, 如果取出来的是苹果, 则混&#34;,&#34;title&#34;:&#34;面经收集&#34;,&#34;uuid&#34;:&#34;043e73f434f93c486c22916b06d7cdde&#34;,&#34;date&#34;:&#34;2018-05-18T21:07:43.000Z&#34;,&#34;tags&#34;:[&#34;面经&#34;],&#34;id&#34;:&#34;面试总结&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 前提说明\n摆脱dva等框架因素, 学习React项目构建最好的方法就是跟着create-react-app项目走一遍.\n\n- 项目地址(star数46978): [create-react-app](https://github.com/facebook/create-react-app)\n\nES6标准文档推荐:\n\n* [Understanding ECMAScript 6](https://&#34;,&#34;title&#34;:&#34;从create-react-app项目中挖掘精髓&#34;,&#34;uuid&#34;:&#34;647b428a01c0badf710c65ce612b3edd&#34;,&#34;date&#34;:&#34;2018-04-15T16:32:09.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;,&#34;JavaScript&#34;],&#34;id&#34;:&#34;从react-create-app项目中挖掘精髓&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]},{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\n　　昨天令人惊喜, 高中同学铜钹山奇女子当年的小组长来上海了, 已经开始找工作. 想起了去年找工作时写过爬取智联招聘和拉钩的招聘信息的爬虫, 兴高采烈得从github上拉下来.配置好PostgreSQL后便跑了起来, 顺便把之前写的csv转xlsx的脚本重写了下, 感觉还不错, 把这个脚本代码贴出来供看到的读者学习, 自己以后也可以参考. 智联招聘的爬虫代码完美运行, 不过拉钩的运行报&#34;,&#34;title&#34;:&#34;工具脚本-csv文件转xlsx文件&#34;,&#34;uuid&#34;:&#34;dad84b4bb9bb55372bd97115c680ab06&#34;,&#34;date&#34;:&#34;2018-03-20T20:18:09.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python工具&#34;,&#34;Python实战&#34;],&#34;id&#34;:&#34;工具脚本-csv文件转xlsx文件&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# GoJS介绍\n\n> GoJS[官网](https://GoJS.net/latest/index.html)定义为一个制作运行于html中的交互式JavaScript图表工具. 用于制作流程图再好不过了.\n\n* 笔记参考于:\n    * [GoJS API](https://GoJS.net/latest/api/symbols/Adornment.html)\n    * [GoJS 绘图](&#34;,&#34;title&#34;:&#34;GoJS学习笔记&#34;,&#34;uuid&#34;:&#34;b2ebec1b25098e8febeddcb067c64858&#34;,&#34;date&#34;:&#34;2018-03-02T17:12:10.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;],&#34;id&#34;:&#34;gojs学习笔记&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 管理多个文件\n> 当用vim同时打开多个文件时,所有文件存入内存中,前端只显示一个文件,其它文件存放的内存叫做缓冲区.\n\n* 显示所有打开文件的列表: `:ls`\n\n## 多文件处理\n* 前端文件显示切换及删除\n\n命令 | 简写 | 含义 | 示例\n---- | ---- | ---- | ----\n`:bprev` | `:bp` | 前端显示上一个文件 | -\n`:bnext` | `:b&#34;,&#34;title&#34;:&#34;vim实用技巧学习笔记3-文件管理&#34;,&#34;uuid&#34;:&#34;9599e1ae16f74d737e8216998c20fc3d&#34;,&#34;date&#34;:&#34;2018-02-28T16:50:48.000Z&#34;,&#34;tags&#34;:[&#34;Vim&#34;],&#34;id&#34;:&#34;vim实用技巧学习笔记3-文件管理&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Vim&#34;,&#34;icon&#34;:[&#34;/skillicons/VIM-Light.svg&#34;,&#34;/skillicons/VIM-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 可配置项及释义对应表\n* 通常配置项头部加no为表示反义\n\n配置项 | 简写 | 值类型 | 默认值  | 反义 | 含义\n------ | ---- | ------ | ------ | ----\nnrformats | - | Numer | 10 | N | 修改数字显示进制, 默认十进制\ntabstop | ts | Number | 8 | N | tab显示占用的空格数\nshif&#34;,&#34;title&#34;:&#34;vim的可配置项&#34;,&#34;uuid&#34;:&#34;ebf4467f1cbfb51234e613d11b19056b&#34;,&#34;date&#34;:&#34;2018-02-26T21:29:11.000Z&#34;,&#34;tags&#34;:[&#34;Vim&#34;],&#34;id&#34;:&#34;vim的可配置项&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Vim&#34;,&#34;icon&#34;:[&#34;/skillicons/VIM-Light.svg&#34;,&#34;/skillicons/VIM-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n\n由于开发新网站, 涉及前后端博客需要改版, 增加留言、统计等配合后端及数据库的自定义功能, 但博客用惯了Hexo, 之前也写了一年博客挂在github page上, 因此决定修改hexo的next主题满足自己的需求.\n\n# 实验环境\n\n* 执行`hexo version`返回如下:\n\n```\nhexo: 3.4.2\nhexo-cli: 1.0.4\nos: Linux 4.13.0-36&#34;,&#34;title&#34;:&#34;Hexo源码阅读&#34;,&#34;uuid&#34;:&#34;fc0e37582221f4ca8c7a1ab387964cfa&#34;,&#34;date&#34;:&#34;2018-02-25T17:16:06.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;Hexo&#34;,&#34;NodeJS&#34;],&#34;id&#34;:&#34;hexo源码阅读&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]},{&#34;tag&#34;:&#34;Hexo&#34;,&#34;icon&#34;:[&#34;/skillicons/Hexo.svg&#34;,&#34;/skillicons/Hexo.svg&#34;]},{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 插入模式(insert-mode)\n## 插入模式下的说明及技巧\n* 插入模式下可执行部分命令以提高效率\n* 插入-普通模式: 插入模式下执行命令后回到原来位置继续输入.\n\n按键操作 | 用途\n-------- | ----\n`<C-h>` | 删除前一个字符\n`<C-w>` | 删除前一个单词\n`<C-u>` | 删除至行首\n`<Esc>` | 切换到普通模式\n`<C-[>` | 切换到普通&#34;,&#34;title&#34;:&#34;vim实用技巧学习笔记2-插入模式、可视模式、命令行模式&#34;,&#34;uuid&#34;:&#34;832f02b5b0903baa7955cbf04d3bc95a&#34;,&#34;date&#34;:&#34;2018-02-21T15:24:06.000Z&#34;,&#34;tags&#34;:[&#34;Vim&#34;],&#34;id&#34;:&#34;vim实用技巧学习笔记2-插入模式可视模式命令行模式&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Vim&#34;,&#34;icon&#34;:[&#34;/skillicons/VIM-Light.svg&#34;,&#34;/skillicons/VIM-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# vim解决问题的方式与普通模式核心\n## 按键及含义\n技巧数 | 按键 | 含义 | 长命令\n------ | ---- | ---- | ------\n1 | `.` | 重复操作 |\n2 | `a` | 在文字后进入插入模式 |\n  | `A` | 在行尾进入插入模式 | `$a`\n  | `c` | 配合其它键使用,执行删除操作 |\n  | `C` | 删除当前到结尾字符 | `c$`\n&#34;,&#34;title&#34;:&#34;vim实用技巧学习笔记1-使用技巧及普通模式&#34;,&#34;uuid&#34;:&#34;d72f5ae091afb5c755acba3bb3557cbb&#34;,&#34;date&#34;:&#34;2018-02-17T22:21:05.000Z&#34;,&#34;tags&#34;:[&#34;Vim&#34;],&#34;id&#34;:&#34;vim实用技巧学习笔记1-使用技巧及普通模式&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Vim&#34;,&#34;icon&#34;:[&#34;/skillicons/VIM-Light.svg&#34;,&#34;/skillicons/VIM-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n与新公司一起从2017跨到了2018,很幸运认识了很多小伙伴,也学到了很多东西,非常感谢.  \n最近压力挺大的,好几个项目一起混合着干,而且都是不太重要的边缘项目,常常加班感觉很忙,很多事情都没有来得及做.  \n今天主要总结下前几天做的一个Python项目,由于是给大公司做,安全方面做的有点过分,要在一个封闭不联网的环境部署程序,自己摸索着试了一种方式,特别记录一下.  \n会有详细步骤,&#34;,&#34;title&#34;:&#34;封闭无网络服务器部署Python项目的经验与总结&#34;,&#34;uuid&#34;:&#34;b8eb7a1e10d986d64dd955647f70bb82&#34;,&#34;date&#34;:&#34;2018-01-07T11:38:27.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python实战&#34;],&#34;id&#34;:&#34;封闭无网络服务器部署python项目的经验与总结&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n碰到NodeJS代码一直很头痛,固话思维js代码都是在浏览器直接执行的,由于前端的可见即可得加上浏览器的调试工具,页面调试js一直很方便.然后碰到NodeJS的杂乱无章的模块就感觉无从下手,今天搜索NodeJS的debug方法特别记录一下,之前c++调试用的gdb,Python调试用的ipdb操作都相似,没想到NodeJS的调试也是如此.\n\n# 介绍\n1. 官网介绍请点击[NodeJS &#34;,&#34;title&#34;:&#34;NodeJS代码的debug&#34;,&#34;uuid&#34;:&#34;d0eb71d436eedd3c797e98696fea61dc&#34;,&#34;date&#34;:&#34;2017-11-28T17:14:18.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;],&#34;id&#34;:&#34;nodejs代码的debug&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# AutoComplete自动完成\n\n参数 | 说明 | 类型 | 默认值\n:-: | :-: | :-: | :-:\ndataSource | 自动完成的数据源 | DataSourceItemType[] | -\nvalue | 指定当前选中的条目 | stringإstring[]ﺇ{ key: string, label: stringﺇReactNode }ﺇArray<{ key: &#34;,&#34;title&#34;:&#34;Ant-Design组件api合集（Data_Entry）&#34;,&#34;uuid&#34;:&#34;80fc3e84acc39e76238cbe0cc5b9de6c&#34;,&#34;date&#34;:&#34;2017-11-21T13:34:53.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;,&#34;Ant-Design&#34;],&#34;id&#34;:&#34;ant-design组件api合集data_entry&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Ant-Design&#34;,&#34;icon&#34;:[&#34;/skillicons/Ant-Design.svg&#34;,&#34;/skillicons/Ant-Design.svg&#34;]}]},{&#34;description&#34;:&#34;# Button按钮\n内容来源: [Button](http://design.alipay.com/develop/web/components/button/)\n\n属性 | 说明 | 类型 | 默认值\n:-: | :-: | :-: | :-:\ntype | 设置按钮类型，可选值为 primary(蓝色) dashed(虚线) danger(红色) 或者不设 | string | -\nhtml&#34;,&#34;title&#34;:&#34;Ant-Design组件api合集(General、Layout、Navigation)&#34;,&#34;uuid&#34;:&#34;edd8a036bf16bda5ca3f1762fb302de7&#34;,&#34;date&#34;:&#34;2017-11-20T10:57:53.000Z&#34;,&#34;tags&#34;:[&#34;React&#34;,&#34;Ant-Design&#34;],&#34;id&#34;:&#34;ant-design组件api合集generallayoutnavigation&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;React&#34;,&#34;icon&#34;:[&#34;/skillicons/React-Light.svg&#34;,&#34;/skillicons/React-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Ant-Design&#34;,&#34;icon&#34;:[&#34;/skillicons/Ant-Design.svg&#34;,&#34;/skillicons/Ant-Design.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n前两天装的ubuntu kylin14.04崩了，进不了桌面，不过可以通过恢复模式进tty。今天装上了ubuntu16.04，因为开发机能想到的最合适的就是这个系统了，清空可ssd的windows全部用来装linux。\n\n# 必备软件下载\n`sudo apt-get install git vim p7zip-full fish curl`\n\n# 开发环境搭建\n安装及配置vim\n配置科学&#34;,&#34;title&#34;:&#34;搭建开发环境&#34;,&#34;uuid&#34;:&#34;b5fcf142d68b757dd7e0c871efc8b062&#34;,&#34;date&#34;:&#34;2017-11-08T21:59:48.000Z&#34;,&#34;tags&#34;:[&#34;系统&#34;],&#34;id&#34;:&#34;搭建开发环境&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 前提说明\n爬虫的最主要的坑莫过于反爬，用户认证把一大批爬虫拒之门外，而如何模拟用户登录、保持会话其实很简单，通过requests模块就可以实现。以下为项目经验摘录。\n\n实验的目标网址通过分配sissionID给浏览器来保持会话状态。\n\n# 具体实现及说明\n## 引入模块\n`import requests`\n\n## 建立会话\n`rs = requests.Session()`\n\n## 修改hea&#34;,&#34;title&#34;:&#34;requests保持会话&#34;,&#34;uuid&#34;:&#34;20260ff47b5869405405436e8f24d28d&#34;,&#34;date&#34;:&#34;2017-10-17T10:30:49.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;],&#34;id&#34;:&#34;requests保持会话&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# django插件\n名称 | 作用 | github地址\n:-: | :-: | :-:\nmarkdown | | [django-markdown](https://github.com/trentm/django-markdown-deux)&#34;,&#34;title&#34;:&#34;Django插件收集&#34;,&#34;uuid&#34;:&#34;0b525813282b71a710a568c3ff10a902&#34;,&#34;date&#34;:&#34;2017-09-13T18:28:51.000Z&#34;,&#34;tags&#34;:[&#34;Django&#34;,&#34;Python&#34;],&#34;id&#34;:&#34;django插件收集&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Django&#34;,&#34;icon&#34;:[&#34;/skillicons/Django.svg&#34;,&#34;/skillicons/Django.svg&#34;]},{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模板的定义与继承\n1. base.html\n```python\n<!DOCTYPE html>\n<html>\n<head>\n    <title>% block title %默认标题% endblock %</title>\n</head>\n<body>\n% include 'nav.html' %\n% block content %\n<div>这里是默认内容，所有继承自这个模板的，如果不覆盖&#34;,&#34;title&#34;:&#34;Django模板&#34;,&#34;uuid&#34;:&#34;defd59258646bccb71b38bb1786ba661&#34;,&#34;date&#34;:&#34;2017-09-13T17:39:43.000Z&#34;,&#34;tags&#34;:[&#34;Django&#34;,&#34;Python&#34;],&#34;id&#34;:&#34;django模板&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Django&#34;,&#34;icon&#34;:[&#34;/skillicons/Django.svg&#34;,&#34;/skillicons/Django.svg&#34;]},{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 渲染方式\n1. 文本渲染: 直接通过函数HttpResponse返回字符串\n    - 引入：`from django.http import HttpResponse`\n    - 返回：`return HttpResponse(string)`\n\n2. 模板渲染：通过函数HttpResponse返回模板渲染后的页面\n    - 引入：`from django.http import Htt&#34;,&#34;title&#34;:&#34;Django渲染方式&#34;,&#34;uuid&#34;:&#34;9e6224dc16d9dd7074a2bed816972284&#34;,&#34;date&#34;:&#34;2017-09-13T16:22:40.000Z&#34;,&#34;tags&#34;:[&#34;Django&#34;,&#34;Python&#34;],&#34;id&#34;:&#34;django渲染方式&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Django&#34;,&#34;icon&#34;:[&#34;/skillicons/Django.svg&#34;,&#34;/skillicons/Django.svg&#34;]},{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 常用命令\n1. 新建项目：`django-admin startproject project_name`\n2. 新建app：`python manage.py startapp app_name`或`django-admin startapp app_name`\n3. 更改及创建数据库表\n  - (1). 创建更改的文件：`python manage.py makemigrations ap&#34;,&#34;title&#34;:&#34;Django命令便查及设置&#34;,&#34;uuid&#34;:&#34;ab8aadc876e0e5cb97ee440d1d924a75&#34;,&#34;date&#34;:&#34;2017-09-13T14:52:07.000Z&#34;,&#34;tags&#34;:[&#34;Django&#34;,&#34;Python&#34;],&#34;id&#34;:&#34;django命令便查及设置&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Django&#34;,&#34;icon&#34;:[&#34;/skillicons/Django.svg&#34;,&#34;/skillicons/Django.svg&#34;]},{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n这几天使用Python读取和写入数据到oracle，感觉快要崩溃，在公司同事的指点下，今天实验，终于解决，在此记录下心得和思考解决问题时的思维路线和过程。\n\n# 本机实验环境\n系统环境：`ubuntu 14.04`  \npython版本：`python2.7`  \noracle版本：`oracle 11g`  \n调试工具：`ipdb`  \n查看数据：`Oracle SQL Develop&#34;,&#34;title&#34;:&#34;关于用Python操作oracle出现乱码处理的一点小小心得&#34;,&#34;uuid&#34;:&#34;bd08d95f3db50384cfa40f506f4a2b88&#34;,&#34;date&#34;:&#34;2017-08-15T11:06:20.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Oracle&#34;],&#34;id&#34;:&#34;关于用python操作oracle的一点小小心得&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\n\ndatetime模块常用于日期和时间的处理\n\n# datetime常用类\n\n1. datetime.date：处理日期\n2. datetime.time：处理时间\n3. datetime.datetime：处理日期时间\n4. datetime.timedelta：处理时间间隔\n\n# datetime.date\n\ndate类表示日期，由年月日组成。\n\n1. 定义方式：`datetim&#34;,&#34;title&#34;:&#34;Python模块学习9-datetime&#34;,&#34;uuid&#34;:&#34;3d06d5d5e2da18a8516fa167fa11a23e&#34;,&#34;date&#34;:&#34;2017-08-09T13:38:04.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习9-datetime&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\nsys是system的缩写，可知这个模块提供系统级的python程序的各类信息\n\n# 常用属性和方法\n命令 | 输出 | 介绍\n:-: | :-: | :-:\nsys.platform | linux2 | 操作系统平台信息\nsys.version | 2.7.6 (default, Oct 26 2016, 20:30:19) \\n[GCC 4.8.4] | python版本信息\n&#34;,&#34;title&#34;:&#34;Python模块学习8-sys&#34;,&#34;uuid&#34;:&#34;3be48605252a2a3b5e99dc448fd4d2f9&#34;,&#34;date&#34;:&#34;2017-08-09T10:21:52.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习8-sys&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;内容已经删除\n<!--\n　　工作一个月来有太多想写了，离开青悦也有四十几天，一个新的环境，却更让人怀念和刘大哥、大神（闵哥）一起奋斗的日子，想想闵哥技术牛逼人又谦虚的人确实不多，真的非常怀念和感谢，这是我不管多久都不会忘的人，真情真心希望他们身体健康、幸福快乐。\n　　在现在这家公司认识了好多人，都挺有趣的，就是技术氛围不行，这可能和做的项目是甲方项目有关吧，反正后端不太追求新技术，不过同事确实都挺&#34;,&#34;title&#34;:&#34;工作一个月零两天&#34;,&#34;uuid&#34;:&#34;4b83ee649a214195e105dcc12656b431&#34;,&#34;date&#34;:&#34;2017-08-08T21:39:31.000Z&#34;,&#34;tags&#34;:[&#34;生活&#34;],&#34;id&#34;:&#34;工作一个月零两天&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 模块说明\nrandom模块用于生成随机数，是对常用的模块之一。\n\n# 随机数实现原理解读\n1. 梅森旋转算法（Mersenne twister）实现伪随机数，`random.random()`方法应用此算法生成随机数。\n\n以下摘录自维基百科：\n\n> 梅森旋转算法（Mersenne twister）是一个伪随机数发生算法。由松本真和西村拓士[1]在1997年开发，基于有限二进制字段上的矩阵线性递&#34;,&#34;title&#34;:&#34;Python模块学习7-random&#34;,&#34;uuid&#34;:&#34;ffd547fdafc850e361f2369f60362d8d&#34;,&#34;date&#34;:&#34;2017-08-07T10:39:29.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习7-random&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\npprint模块常用于列表、元组和字典数据类型的美化输出。提供的方法包括有`pformat()`、`pprint()` 和 `saferepr()`，其中pprint.pprint()方法最常用，常用来调试，如查看某个特殊对象的内部成员，例，查看math模块的内部成员：`pprint.pprint(vars(math))`\n\n这个模块还是挺鸡肋的，除了配合ipdb调试的时候会用到其它&#34;,&#34;title&#34;:&#34;Python模块学习6-pprint&#34;,&#34;uuid&#34;:&#34;56102230aeebd280bbd3fe7eb051f0ec&#34;,&#34;date&#34;:&#34;2017-08-07T09:17:32.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习6-pprint&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\n\n用STL写c++代码，其中好多集成的数据结构都有内置迭代器，用迭代器的好处既可以提高程序执行效率，又可以减少程序对系统内存的占用。而python的itertools模块实现了很多数据结构的生产，返回的不是传统变量对象，而是迭代器，这等实用模块肯定必学的。但是，找了半天源码都没找到，应该使用c写的模块，可以参见github的cpython项目下的Modules/itertoolsmo&#34;,&#34;title&#34;:&#34;Python模块学习5-itertools&#34;,&#34;uuid&#34;:&#34;ff2375255185a2c1c6baa010ab9b3aa2&#34;,&#34;date&#34;:&#34;2017-08-04T10:37:45.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习5-itertools&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\n\n本人linux下处理压缩包一般用7z命令，很好用，今天学习python的zipfile模块，用python处理zip压缩包也挺方便的哈。\n\n# 常用处理zip流程\n\n提供了常用的ZipFile和ZipInfo类，用于处理zip包和查看文件属性。\n\n```python\nimport zipfile\nz = zipfile.ZipFile('xxx.zip', 'w') #打开压缩包文&#34;,&#34;title&#34;:&#34;Python模块学习4-zipfile&#34;,&#34;uuid&#34;:&#34;c9a575a53e8a5c9aaa60c79c33e21063&#34;,&#34;date&#34;:&#34;2017-08-03T16:56:21.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习4-zipfile&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\nos模块是最常用的模块之一，运维人员用python替代shell运维，os模块功不可没。\n\n# 常用属性与函数\n属性名 | 功能\n:-: | :-:\nos.system(command) | 执行shell命令\nos.name | 返回平台名，windows返回nt，linux返回posix\nos.uname() | 返回平台信息\nos.sep | 返回操作系统的路径分隔符\nos.s&#34;,&#34;title&#34;:&#34;Python模块学习3-os&#34;,&#34;uuid&#34;:&#34;6c1c898f7d4683a9cafbc1fe705e9223&#34;,&#34;date&#34;:&#34;2017-08-03T13:40:37.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习3-os&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\njson模块用于序列化和反序列化json格式数据，常用的函数有load, loads, dump, dumps\n\n# loads：将字符串转换成json数据\n`loads(s, encoding=None, cls=None, object_hook=None, parse_float=None, parse_int=None, parse_constant=None, object&#34;,&#34;title&#34;:&#34;Python模块学习2-json&#34;,&#34;uuid&#34;:&#34;a844ebfbaeb3177eff6488fe2e77aa87&#34;,&#34;date&#34;:&#34;2017-08-03T11:40:28.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习2-json&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 模块说明\ncsv模块对于程序处理非常友好，常用于数据处理和计算。\n\n# 向csv文件中写入数据\n打开文件指向f, 设置csv.writer对象赋值给writer, 方法writerow和writerows用于写入数据。\n```python\nimport csv\nwith open('test.csv','wb') as f:\n    writer = csv.writer(f, delimit&#34;,&#34;title&#34;:&#34;Python模块学习1-csv&#34;,&#34;uuid&#34;:&#34;21181c5e5d14b7397be94cf0892149fc&#34;,&#34;date&#34;:&#34;2017-08-03T10:06:46.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;python模块学习1-csv&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;1. 创建表\n```sql\ncreate table tb_name(\n    id number(1000, 0),\n    haha varchar2(500),\n    create_at date\n)\n```\n2. 增加字段：`alter table tb_name add col_name varchar2(500);`\n3. 修改字段：`alter table tb_name modi&#34;,&#34;title&#34;:&#34;Oracle基础-数据表&#34;,&#34;uuid&#34;:&#34;4d8d408edbbb5fe42aa5ee6713e8a9be&#34;,&#34;date&#34;:&#34;2017-07-20T22:43:23.000Z&#34;,&#34;tags&#34;:[&#34;Oracle&#34;],&#34;id&#34;:&#34;oracle基础-数据表&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 表空间的分类\n1. 永久表空间：表，视图，存储过程\n2. 临时表空间：数据库操作过程中的中间执行的过程，执行完后会被释放掉\n3. Undo表空间：保存数据表修改前的信息储存。\n# 表空间的操作\n1. 创建表空间：`create tablespace ts_name datafile 'D:\\oracle\\data\\firstspace.dbf' size 20M autoextend on n&#34;,&#34;title&#34;:&#34;Oracle基础-表空间&#34;,&#34;uuid&#34;:&#34;26af555c33d2512ffd530d49ac32d6fb&#34;,&#34;date&#34;:&#34;2017-07-20T22:42:07.000Z&#34;,&#34;tags&#34;:[&#34;Oracle&#34;],&#34;id&#34;:&#34;oracle基础-表空间&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;数据类型 | 参数 | 描述\n:-: | :-: | :-:\nchar(n) | 1<= n <= 2000 | 定长字符串，n为字节长度，缺省默认为1字节\nnchar(n) | 1<= n <= 1000 | 同char，区别在于nchar以unicode方式存储数据，常用于存储汉字\nvarchar2(n) | 1 <= n <= 4000 | 可变长字符串，n为字符串的最大长度，会自动删除字符&#34;,&#34;title&#34;:&#34;Oracle数据类型&#34;,&#34;uuid&#34;:&#34;bebf0efa86d3b05ecf09f255e23096b0&#34;,&#34;date&#34;:&#34;2017-07-20T22:40:09.000Z&#34;,&#34;tags&#34;:[&#34;Oracle&#34;],&#34;id&#34;:&#34;oracle数据类型&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 申明\n阮一峰老师的ECMAScript 6学习笔记。\n\nProxy和Reflect都是ES6新加的对象, Proxy对象用于拦截对象的默认属性, 而Reflect对象则用作方法仓库, 将其它数据结构绑定的工具函数移到这个方法下面, Reflect的方法属性与Proxy对象的方法属性一一对应.\n\n# Proxy\n修改某些操作的默认行为。  \nProxy的初始化方式(其实就是第二个对象参数里面的对&#34;,&#34;title&#34;:&#34;ES6学习笔记4（Proxy、Reflect）&#34;,&#34;uuid&#34;:&#34;db92be56ddfb5c5a6478133ad3ca82f3&#34;,&#34;date&#34;:&#34;2017-07-04T10:05:48.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;ES6&#34;],&#34;id&#34;:&#34;es6学习笔记4proxy&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 申明\n阮一峰老师的ECMAScript 6学习笔记。\n\n看到map和set还是有点亲切的，之前为了竞赛写了一年的c++，自认对STL用的也还顺手，一年没碰了，现在打开[reference](http://www.cplusplus.com/reference/)页面还是挺感慨的，连最基本的vector都忘了[摊手]。虽然用法忘了，但标准模板库的设计理念还在，尤其set和map容器，es6都加进&#34;,&#34;title&#34;:&#34;ES6学习笔记3（set、map和Symbol）&#34;,&#34;uuid&#34;:&#34;6eed957fdaa0ee13b02bba22c0d1776e&#34;,&#34;date&#34;:&#34;2017-07-02T10:22:16.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;ES6&#34;],&#34;id&#34;:&#34;es6学习笔记3setmap和symbol&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 申明\n阮一峰老师的ECMAScript 6学习笔记。\n\n# 字符串拓展\n## 常用字符串操作函数\n1. `indexOf(substr)`，返回字串在父串中的下标，否则返回-1。`'hello'.indexOf('ll'); //2`\n2. `includes(substr, num)`，返回字符串是否为子串的布尔值。`'hello'.includes('ll'); //true`\n3. `s&#34;,&#34;title&#34;:&#34;ES6学习笔记2（基础语法的拓展）&#34;,&#34;uuid&#34;:&#34;40e0faae23b4877fec0609654a09b7ad&#34;,&#34;date&#34;:&#34;2017-06-29T16:22:29.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;ES6&#34;],&#34;id&#34;:&#34;es6学习笔记2基础语法的拓展&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# 申明\n阮一峰老师的ECMAScript 6学习笔记。\n\n# let声明变量\n1. let申明的变量只在当前代码块中有效。\n2. let申明变量不存在变量提升，一定遵循先声明后使用的原则。\n3. 暂时性死区(temporal dead zone)：当代码块中有let申明的变量，不管外部是否有此同名变量的其它申明，在此代码块中依然严格遵循先申明后使用的原则。由于此特性，变量的类型检测typeof将&#34;,&#34;title&#34;:&#34;ES6学习笔记1（let、const及变量的解构赋值）&#34;,&#34;uuid&#34;:&#34;f008e2eb1ff400e006dc4edf7215656e&#34;,&#34;date&#34;:&#34;2017-06-29T10:25:08.000Z&#34;,&#34;tags&#34;:[&#34;JavaScript&#34;,&#34;ES6&#34;],&#34;id&#34;:&#34;es6学习笔记1letconst及变量的解构赋值&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;JavaScript&#34;,&#34;icon&#34;:[&#34;/skillicons/JavaScript.svg&#34;,&#34;/skillicons/JavaScript.svg&#34;]}]},{&#34;description&#34;:&#34;# Ox01 前言\n前一篇文章是介绍如何收集个人信息[渗透测试之数据收集](http://howduudu.xyz/2017/06/05/%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E6%95%B0%E6%8D%AE%E6%94%B6%E9%9B%86/),面对的对象是人。这一篇介绍如何判断目标主机的信息，如是否能连接上、开放的端口及目标主机系统信息&#34;,&#34;title&#34;:&#34;渗透测试之目标主机识别&#34;,&#34;uuid&#34;:&#34;98b3f2801db7cd9e140ab1eb4abf5cac&#34;,&#34;date&#34;:&#34;2017-06-06T20:46:27.000Z&#34;,&#34;tags&#34;:[&#34;信息安全&#34;],&#34;id&#34;:&#34;渗透测试之目标主机识别&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# Ox01 前言\n数据收集常用作网站攻击的前奏，收集数据在整个渗透过程中有着至关重要的作用。\n\n# Ox02 测试环境\nDescription: Kali GNU/Linux Rolling  \nLinux xxx 4.9.0-kali4-amd64 #1 SMP Debian 4.9.25-1kali1 (2017-05-04) x86\\_64 GNU/Linux\n\n# Ox03 域名反查及信&#34;,&#34;title&#34;:&#34;渗透测试之数据收集&#34;,&#34;uuid&#34;:&#34;325ff45bb10a21c5a535d4436c150e89&#34;,&#34;date&#34;:&#34;2017-06-05T20:59:38.000Z&#34;,&#34;tags&#34;:[&#34;信息安全&#34;],&#34;id&#34;:&#34;渗透测试之数据收集&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# 测试机信息\nDescription:\tKali GNU/Linux Rolling  \nLinux taot 4.9.0-kali4-amd64 #1 SMP Debian 4.9.25-1kali1 (2017-05-04) x86_64 GNU/Linux\n\n# burp\\_suite 介绍\n知名的web抓包工具。  \n官方教程：[点击进入](https://portswigger.net&#34;,&#34;title&#34;:&#34;burp_suite&#34;,&#34;uuid&#34;:&#34;b2ac06a9840664ac1e24799a793f9a69&#34;,&#34;date&#34;:&#34;2017-06-03T10:57:53.000Z&#34;,&#34;tags&#34;:[&#34;渗透测试工具&#34;],&#34;id&#34;:&#34;burp-suite学习笔记&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# citus介绍\n\n> citus全称citusdata，是postgresql的一个插件用来实现大数据分区，从而实现分布式数据库，通过分区键达到高效能索引，实现数据的高效率读取\n\n官方介绍：Citus is a distributed database that scales across commodity servers using transparent sharding and rep&#34;,&#34;title&#34;:&#34;配置分布式数据库citus&#34;,&#34;uuid&#34;:&#34;5edf1416ea4e8bab3a696b3907845b77&#34;,&#34;date&#34;:&#34;2017-06-01T21:53:06.000Z&#34;,&#34;tags&#34;:[&#34;PostgreSQL&#34;,&#34;Docker&#34;],&#34;id&#34;:&#34;配置citus&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;PostgreSQL&#34;,&#34;icon&#34;:[&#34;/skillicons/PostgreSQL-Light.svg&#34;,&#34;/skillicons/PostgreSQL-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Docker&#34;,&#34;icon&#34;:[&#34;/skillicons/Docker.svg&#34;,&#34;/skillicons/Docker.svg&#34;]}]},{&#34;description&#34;:&#34;# 前言\n当在django项目根目录下执行python manage.py xxx xxxx后执行步骤是什么呢？\n\n# 步骤分析\n第一步：程序进入manage.py执行到第十行，调用入口函数：execute_from_command_line，传入manage.py后面跟着的参数。\n```python\nmanage.py(10)<module>\nexecute_from_command_line(&#34;,&#34;title&#34;:&#34;Django的执行流程&#34;,&#34;uuid&#34;:&#34;209b1cbdd41982f238d3283e7b53968c&#34;,&#34;date&#34;:&#34;2017-05-22T08:04:00.000Z&#34;,&#34;tags&#34;:[&#34;Django&#34;,&#34;Python&#34;],&#34;id&#34;:&#34;django的执行流程&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Django&#34;,&#34;icon&#34;:[&#34;/skillicons/Django.svg&#34;,&#34;/skillicons/Django.svg&#34;]},{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 问题来源\n\n　　pgsql安装后使用`psql -U deploy -t test -W`登录数据库失败.\n\n　　报错信息: `psql: FATAL:  Peer authentication failed for user \&#34;deploy\&#34;`\n\n　　中文翻译: `psql: 失败: 用户deploy的Peer认证失败`\n\n　　其中表test已存在,且deploy有登录权限.\n\n# 解决\n\n&#34;,&#34;title&#34;:&#34;连接pgsql报认证错误解决方法&#34;,&#34;uuid&#34;:&#34;36248181c50c00e62d1a15eca060489d&#34;,&#34;date&#34;:&#34;2017-05-06T08:07:32.000Z&#34;,&#34;tags&#34;:[&#34;PostgreSQL&#34;,&#34;Python&#34;],&#34;id&#34;:&#34;连接pgsql报认证错误解决方法&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;PostgreSQL&#34;,&#34;icon&#34;:[&#34;/skillicons/PostgreSQL-Light.svg&#34;,&#34;/skillicons/PostgreSQL-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# baisc concept\n\n1. csv file: full-name is Comma-separated values. 字面意思就是用逗号分隔文本的文件. 由于非常适合用于二次开发,所以常流通与数据库导出.\n2. xls or xlsx: 这个应该不会陌生,excel的专用文件格式.\n\n# 为什么要转换?\n\n　　csv是简单的用逗号分隔值,对于交互开发非常方便,但是文件是给人用的话c&#34;,&#34;title&#34;:&#34;csv转xlsx&#34;,&#34;uuid&#34;:&#34;2addbd193b674389756a885f38ed6970&#34;,&#34;date&#34;:&#34;2017-05-04T07:34:52.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python实战&#34;],&#34;id&#34;:&#34;csv转xls&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 说明\n\n> 阅读[Scrapy官网](https://docs.scrapy.org/en/latest/index.html).\n\n# 实战既是王道\n\n## 创建项目\n\n`scrapy startproject tutorial`\n\n```python\n├── scrapy.cfg            #部署用的配置文件\n└── tutorial\n    ├── __init__.py\n &#34;,&#34;title&#34;:&#34;Scrapy阅读笔记&#34;,&#34;uuid&#34;:&#34;b1e86b504e9deae4419ac1905b4ec69a&#34;,&#34;date&#34;:&#34;2017-05-01T07:27:36.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Scrapy&#34;,&#34;爬虫&#34;],&#34;id&#34;:&#34;scrapy阅读笔记&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 申明\n\n本实战内容为BeautifulSoup的简单应用,分为Python功能实现和css样式优化.\n\n因信息为其它网站爬取,为保障其网站避免无端爬虫爬取造成性能及数据的损害,因此网址内容做处理.\n\n本脚本仅作学习用途,转载请注明出处.\n\n# Python功能实现\n脚本过于简单,不做过多说明,感兴趣的可以拿我博客站点试验.\n```python\n#coding:utf-8\nfrom bs4 im&#34;,&#34;title&#34;:&#34;\\[实战\\]获取上海自考的所有院校及专业信息&#34;,&#34;uuid&#34;:&#34;df956e26ba580d35ceceba3608ef4931&#34;,&#34;date&#34;:&#34;2017-04-23T14:08:04.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python实战&#34;],&#34;id&#34;:&#34;实战-获取上海自考的所有院校及专业信息&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;**所有数据均为本人采集,如有侵权请联系我,立删!**\n专业课程详情请点击专业链接直达.\n如有其他需求或者有错误请联系本人修改,谢谢!\n\n## 复旦大学\n[计算机信息管理（专科A082207）](/get_courses/计算机信息管理（专科A082207）.html)\n[行政管理（专科A030301）](/get_courses/行政管理（专科A030301）.html)\n[护理学（专科A100&#34;,&#34;title&#34;:&#34;上海自考专业及详细信息汇总&#34;,&#34;uuid&#34;:&#34;4f3624ac93fbfe6a3a99b582be8ec01e&#34;,&#34;date&#34;:&#34;2017-04-23T12:40:02.000Z&#34;,&#34;tags&#34;:[&#34;Python实战&#34;],&#34;id&#34;:&#34;上海自考专业及详细信息汇总&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;# BeautifulSoup是什么？\n\n- BeautifulSoup是Python的一个模块，用于更好的解析html代码，帮助开发人员更好的操作节点元素，能用jQuery的方式操作Dom节点还会用xpath吗？\n\n# BeautifulSoup和解释器的安装\n\n- [官网地址](https://www.crummy.com/software/BeautifulSoup/)\n\n## 安装Beau&#34;,&#34;title&#34;:&#34;像使用jQuery一样的使用BeautifulSoup&#34;,&#34;uuid&#34;:&#34;0406e41a0c5d424a19633dc712c23ce5&#34;,&#34;date&#34;:&#34;2017-04-22T16:58:49.000Z&#34;,&#34;tags&#34;:[&#34;Python-Module&#34;,&#34;BeautifulSoup&#34;],&#34;id&#34;:&#34;beautifulsoup的使用&#34;,&#34;skills&#34;:[]},{&#34;description&#34;:&#34;## 前言\n\n　　最近操作数据库时遇到一个问题，来这里记录下，分享下心得。\n\n　　情景重现：数据库有张表，有一亿五千万条数据，其中都为同一年数据，由于建表时忘记添加唯一索引导致有部分数据重复。现在需要统计某一字段为某个值的数据条数。\n\n　　表字段定义如下（由于原字段涉及公司数据，因此模拟重现）：\n\n　　含义：每天凌晨爬取各地孩童前一天的出生情况,其中每次爬取入库的时间都在前一天内。\n\n　　　　数据&#34;,&#34;title&#34;:&#34;PostgreSQL函数（存储过程）--案例分析&#34;,&#34;uuid&#34;:&#34;008849f831619f200103bb7a197bf2ce&#34;,&#34;date&#34;:&#34;2017-04-22T10:18:33.000Z&#34;,&#34;tags&#34;:[&#34;PostgreSQL&#34;],&#34;id&#34;:&#34;postgresql存储过程&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;PostgreSQL&#34;,&#34;icon&#34;:[&#34;/skillicons/PostgreSQL-Light.svg&#34;,&#34;/skillicons/PostgreSQL-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;### 引入模块\n\n以pprint模块的pprint方法为例\n\n1. 直接引入模块\n引入模块：`import pprint`\n调用方法：`pprint.pprint()`\n2. 引入模块方法(**可直接使用**)\n引入pprint方法：`from pprint import pprint`\n引入pprint模块的所有方法：`from pprint import *`\n调用方式：`pprint()`&#34;,&#34;title&#34;:&#34;《Python基础教程》复读笔记(4)-模块&#34;,&#34;uuid&#34;:&#34;16c7cb449cfcda5b3d25db0ade451809&#34;,&#34;date&#34;:&#34;2017-04-11T19:18:44.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;],&#34;id&#34;:&#34;python基础教程复读笔记-4&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;### `__init__`、`__getitem__`、`__setitem__`和`__len__`\n\n1. `__init__`: 对象的构造函数\n2. `__getitem__`: 使对象具有下标索引的能力如,`Obj[2]`\n3. `__setitem__`: 使用下标索引的方式为对象属性赋值如,`Obj[4] = 1`\n4. `__len__`: 让对象具有len方法如,`len(Ob&#34;,&#34;title&#34;:&#34;《Python基础教程》复读笔记(3)&#34;,&#34;uuid&#34;:&#34;c2ea19d93e2034b1ad7df9bd0d7830bd&#34;,&#34;date&#34;:&#34;2017-04-08T13:54:26.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;],&#34;id&#34;:&#34;python基础教程复读笔记-3&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;### 断言\n\n```python\nassert x == y, 'hehe'\n=>\nif x != y:\n\traise AssertionError('hehe')\n```\n\n### exec和eval\n\nexec用于执行表达式，eval用于表达式求职。\n\n```python\n>>> exec('print \&#34;haha\&#34;')\nhaha\n>>> eval('1+1*2')\n3\n```\n\n### `&#34;,&#34;title&#34;:&#34;《Python基础教程》复读笔记(2)&#34;,&#34;uuid&#34;:&#34;c86ed091716944a57230902ea1ca3886&#34;,&#34;date&#34;:&#34;2017-04-06T20:53:59.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;],&#34;id&#34;:&#34;python基础教程复读笔记-2&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;### str和repr\n\n都是用来将其它类型转换成字符串。其中repr以合法的Python表达式的形式展示。\n\n```\n>>> repr(1000L)\n'1000L'\n>>> str(1000L)\n'1000'\n```\n\n### input和raw\\_input\n\n都是用来接受用户的输入，其中input接受用户输入的合法表达式，raw\\_input接收用户输入的原始数据。\n\n### 列表操作\n\n&#34;,&#34;title&#34;:&#34;《Python基础教程》复读笔记(1)&#34;,&#34;uuid&#34;:&#34;6f4f810361c4bb24774890b64321d0c0&#34;,&#34;date&#34;:&#34;2017-04-05T22:32:52.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;],&#34;id&#34;:&#34;python基础教程复读笔记-1&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;### 前言\n\n一般使用hash结构较多，尤其是存储对象，非常使用．\n比如有多个对象存入redis中(redis中数据读取速度快常用于做数据中转)：\n\n```python\nman = {\n  'smoke': 'No',\n  'wine': 'year, is very good!'\n}\nwoman = {\n  'smoke': 'No',\n  'win': 'No'\n}\n#省略连接操作\n#此时用&#34;,&#34;title&#34;:&#34;Dedis数据结构&#34;,&#34;uuid&#34;:&#34;5853f5b265183feccb71e2ed7e9c51a2&#34;,&#34;date&#34;:&#34;2017-04-01T20:53:21.000Z&#34;,&#34;tags&#34;:[&#34;Redis&#34;],&#34;id&#34;:&#34;redis数据结构&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Redis&#34;,&#34;icon&#34;:[&#34;/skillicons/Redis-Light.svg&#34;,&#34;/skillicons/Redis-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;# 教程名：基于express + NodeJS的项目构建全览\n\n> 一步一步构建整个项目，并对步骤详细说明，和部分使用技巧，设计开发、数据交互、测试、上传代码库等知识点\n\n项目地址: [基于express + NodeJS的项目构建全览](https://github.com/zhenxianluo/NodeJSAndExpressBestDemo)\n\n# 克隆本仓库代码到本地并运行\n\n> 正常&#34;,&#34;title&#34;:&#34;基于Express + NodeJS的项目构建全览&#34;,&#34;uuid&#34;:&#34;c6669dec1bb1590bd20b9c525bdc1556&#34;,&#34;date&#34;:&#34;2017-04-01T19:11:01.000Z&#34;,&#34;tags&#34;:[&#34;NodeJS&#34;,&#34;Express&#34;,&#34;MongoDB&#34;],&#34;id&#34;:&#34;nodejs的项目构建全览&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;NodeJS&#34;,&#34;icon&#34;:[&#34;/skillicons/NodeJS-Light.svg&#34;,&#34;/skillicons/NodeJS-Dark.svg&#34;]},{&#34;tag&#34;:&#34;MongoDB&#34;,&#34;icon&#34;:[&#34;/skillicons/MongoDB.svg&#34;,&#34;/skillicons/MongoDB.svg&#34;]}]},{&#34;description&#34;:&#34;```javascript\ngit checkout -b dev    //创建dev分支并切换到分支下,等价于:\ngit branch dev    //创建分支\ngit checkout dev    //切换分支\ngit branch    //查看当前分支\ngit merge dev    //先切换到其他，然后把dev分支合并到当前分支下\ngit branch -d dev    //&#34;,&#34;title&#34;:&#34;git进阶（分支与标签管理）&#34;,&#34;uuid&#34;:&#34;b3d202953e5ced5f280a25ae1e4b7774&#34;,&#34;date&#34;:&#34;2017-03-31T21:55:05.000Z&#34;,&#34;tags&#34;:[&#34;Git&#34;],&#34;id&#34;:&#34;git进阶分支与标签管理&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Git&#34;,&#34;icon&#34;:[&#34;/skillicons/Git.svg&#34;,&#34;/skillicons/Git.svg&#34;]}]},{&#34;description&#34;:&#34;```js\nssh-keygen -t rsa -C \&#34;youremail@example.com\&#34;    //会生成.ssh文件夹，内有两个文件分别存储了私钥和公钥，公钥用于和github认证\n//在github创建项目，比如f7-dome\ngit remote add origin https://github.com/yougithubname/f7-dome.git　　//本地仓库与git&#34;,&#34;title&#34;:&#34;git进阶（远程仓库github）&#34;,&#34;uuid&#34;:&#34;d63cb8b34479af4ade14b27a206d8f46&#34;,&#34;date&#34;:&#34;2017-03-31T21:48:38.000Z&#34;,&#34;tags&#34;:[&#34;Git&#34;],&#34;id&#34;:&#34;git进阶远程仓库github&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Git&#34;,&#34;icon&#34;:[&#34;/skillicons/Git.svg&#34;,&#34;/skillicons/Git.svg&#34;]}]},{&#34;description&#34;:&#34;1. 安装git \n    * 显示git版本: `git --version`\n    * debian系列安装命令：`sudo apt-get install git` \n    * windows系列：一键安装`msysgit`\n\n2. 创建用户\n    * `git config --global user.name \&#34;name\&#34;`\n    * `git config --global u&#34;,&#34;title&#34;:&#34;git入门命令（只涉及本地仓库管理）&#34;,&#34;uuid&#34;:&#34;96b316075056cd249b99cacc6b446580&#34;,&#34;date&#34;:&#34;2017-03-31T21:06:31.000Z&#34;,&#34;tags&#34;:[&#34;Git&#34;],&#34;id&#34;:&#34;git入门命令只涉及本地仓库管理&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Git&#34;,&#34;icon&#34;:[&#34;/skillicons/Git.svg&#34;,&#34;/skillicons/Git.svg&#34;]}]},{&#34;description&#34;:&#34;推荐阅读：[配置环境变量.env文件](/2017/03/29/配置环境变量-env文件/)\n### 前言\n　　有时候对数据库进行增删改查时会遇到各种莫名奇妙的问题,或许是因为你的字段名用到了sql的关键字.\n　　关于PostgreSQL和SQL:2003、SQL:1999、SQL-92各版本规范的关键字参见网页：[关键词详情页](http://www.php100.com/manual/Post&#34;,&#34;title&#34;:&#34;修改PgSQL数据库中表中为关键字的字段名&#34;,&#34;uuid&#34;:&#34;306c31a2a4efff03035c418331c931d5&#34;,&#34;date&#34;:&#34;2017-03-29T22:43:06.000Z&#34;,&#34;tags&#34;:[&#34;PostgreSQL&#34;,&#34;Python&#34;,&#34;Python实战&#34;],&#34;id&#34;:&#34;修改psql数据库中表中为关键字的字段名&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;PostgreSQL&#34;,&#34;icon&#34;:[&#34;/skillicons/PostgreSQL-Light.svg&#34;,&#34;/skillicons/PostgreSQL-Dark.svg&#34;]},{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;推荐阅读：[建立Python的虚拟运行环境](/2017/03/29/建立Python的虚拟运行环境/)\n## 配置环境变量\n\n> - 依赖模块：`os`, `python-dotenv`\n\n### 前言\n　　对于项目开发，比如用到redis或psql的，总会用到各种配置信息，当开发环境推到线上环境，就到改这些配置信息，这个非常令人头痛而且易错的。为此我们可以使用环境变量控制这些配置信息。\n\n##&#34;,&#34;title&#34;:&#34;在项目中实用.env文件&#34;,&#34;uuid&#34;:&#34;b3fdff43741747ddb99e6a47dc4716a9&#34;,&#34;date&#34;:&#34;2017-03-29T22:03:25.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;配置环境变量-env文件&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;### 前言\n　　相对于NodeJS组件的安装，可以通过指定--save参数，让package.json保存依赖信息，而Python没有用到这种安装依赖的方式，当新手把项目从开发环境deploy到线上环境执行脚本时就要崩溃了(报引入错误)，依赖模块过多新手如果根据报错一个一个安装模块那就太耗时间了，这篇博文就是解决此类问题...\n\n### 功能实现\n1. 导出依赖通常有两种：\n\t1. 安装导出依赖&#34;,&#34;title&#34;:&#34;建立Python的虚拟运行环境&#34;,&#34;uuid&#34;:&#34;2869b9c4b761d7a23d4f899134851558&#34;,&#34;date&#34;:&#34;2017-03-29T19:15:20.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;],&#34;id&#34;:&#34;建立python的虚拟运行环境&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;- 小A: 请问如何不用软件向多个人发送邮件？\n- 小B: 你是想群发邮件发广告吗？\n- 小A: 不不不，只是用来监控项目的异常并及时告知。\n- 小B: 哦，这个简单。\n\n## 还在手动方式发邮件吗？你out了\n\n> 想必做python项目开发的肯定遇到过类似问题，程序崩溃，服务终止，自己却不知道，导致用户骂声连连。其实这些都可以通过python配置邮件提醒。不过如果你是用阿里云服务器部署的，那也&#34;,&#34;title&#34;:&#34;利用Python的email模块发带附件的邮件&#34;,&#34;uuid&#34;:&#34;0b10612bc7d3857c1fd61519292c842b&#34;,&#34;date&#34;:&#34;2017-03-28T21:35:58.000Z&#34;,&#34;tags&#34;:[&#34;Python&#34;,&#34;Python-Module&#34;],&#34;id&#34;:&#34;利用python的email模块发带附件的邮件&#34;,&#34;skills&#34;:[{&#34;tag&#34;:&#34;Python&#34;,&#34;icon&#34;:[&#34;/skillicons/Python-Light.svg&#34;,&#34;/skillicons/Python-Dark.svg&#34;]}]},{&#34;description&#34;:&#34;好久没有写博客了，最近遇到的问题踩到的坑都记载在有道云笔记之中，但毕竟不能长久。\n　　做为秉承开源共享的互联网精神，方便自己总结后让和读者互相学习，也方便一起交流技术，因此申请howduudu.xyz域名建立博客，望通过博客的这个渠道交到更多的朋友。\n\n## 接下来规划\n1. 有道云笔记的笔记整理成博文移植到本网站。\n2. 移植博客园博客到本博客。\n3. 本博博本内容涉及的主要技术栈：前端js、后&#34;,&#34;title&#34;:&#34;从博客园和有道云笔记迁移内容到本博客&#34;,&#34;uuid&#34;:&#34;d859adf6a6ca9e852346de0925aa3828&#34;,&#34;date&#34;:&#34;2017-03-28T07:41:09.000Z&#34;,&#34;tags&#34;:[&#34;生活&#34;],&#34;id&#34;:&#34;从博客园和有道云笔记迁移内容到本博客&#34;,&#34;skills&#34;:[]}])" x-init="init()"> <div class="flex justify-between items-center mb-4"> <span class="text-xl font-bold flex items-center"> <span class="icon-[material-symbols--article-outline] mr-2"></span> Random Articles </span> <button class="btn btn-ghost btn-circle hover:scale-150 transition ease-in-out size-8" @click="shuffle"> <span class="icon-[picon--reload]"></span> </button> </div>   <template x-for="item in data" :key="item.uuid"> <div class="shadow-[0_-1px_0px_0px_rgba(0,0,0,0.1)] w-full"> <div class="truncate w-full pt-2"> <a :href="&#34;/en/article/&#34; + item.uuid" class="hover:underline" x-text="item.title"></a> </div> <div class="flex justify-between font-mono my-2 w-full"> <span class="flex items-center"> <template x-for="skill in item.skills" :key="skill.tag"> <a :href="&#34;/en/tags/&#34; + skill.tag" class="tooltip inline-block h-max" :data-tip="skill.tag"> <img :src="skill.icon[0]" :alt="skill.tag" class="w-5 h-5 mr-1 hidden dark:inline-block mt-0 mb-0"> <img :src="skill.icon[1]" :alt="skill.tag" class="w-5 h-5 mr-1 inline-block dark:hidden mt-0 mb-0"> </a> </template> <template x-if="item.skills.length === 0"> <span class="icon-[tabler--space-off] pointer-events-none opacity-50 cursor-not-allowed"></span> </template> </span> <span x-text="formatDate(item.date)"></span> </div> </div> </template>  </div> <div class="flex flex-col shadow-md dark:shadow-cyan/20 mt-8 p-8 xl:p-4 "> <div class="flex justify-between items-center mb-4"> <span class="text-xl font-bold flex items-center"> <span class="icon-[material-symbols-light--avg-time-outline-sharp] mr-2"></span> Life Countdown </span>  </div>  <div x-data="((shows2) => {
+    function render(template, data) {
+      return template.replace(/\{\{(.*?)\}\}/g, (_, key) => data[key.trim()] ?? &#34;&#34;);
+    }
+    return {
+      time: /* @__PURE__ */ new Date(),
+      timer: null,
+      progressList: [],
+      init() {
+        this.update();
+        this.timer = setInterval(() => this.update(), 1e3);
+      },
+      update() {
+        this.time = /* @__PURE__ */ new Date();
+        const yearEnd = new Date(this.time.getFullYear(), 11, 31, 23, 59, 59);
+        const monthEnd = new Date(this.time.getFullYear(), this.time.getMonth() + 1, 0);
+        const dayEnd = new Date(this.time.getFullYear(), this.time.getMonth(), this.time.getDate(), 23, 59, 59);
+        const dayStart = new Date(this.time.getFullYear(), this.time.getMonth(), this.time.getDate(), 0, 0, 0);
+        const weekEnd = new Date(this.time);
+        weekEnd.setDate(this.time.getDate() + (7 - (this.time.getDay() || 7)));
+        const getDaysLeft = (end) => Math.ceil((end.getTime() - this.time.getTime()) / (1e3 * 60 * 60 * 24));
+        const diff = Math.max(0, dayEnd.getTime() - this.time.getTime());
+        const hours = Math.floor(diff / (1e3 * 60 * 60));
+        const minutes = Math.floor(diff % (1e3 * 60 * 60) / (1e3 * 60));
+        const seconds = Math.floor(diff % (1e3 * 60) / 1e3);
+        const dayProgress = 100 - diff / (dayEnd.getTime() - dayStart.getTime()) * 100;
+        const leftYearDay = getDaysLeft(yearEnd);
+        const leftMonthDay = getDaysLeft(monthEnd);
+        const leftWeekDay = getDaysLeft(weekEnd);
+        const getDaysInCurrentYear = () => {
+          const year = this.time.getFullYear();
+          const start = new Date(year, 0, 1);
+          const end = new Date(year + 1, 0, 1);
+          return (end - start) / (1e3 * 60 * 60 * 24);
+        };
+        const springFestivalDates = [
+          { year: 2025, date: &#34;2025-01-29&#34; },
+          { year: 2026, date: &#34;2026-02-17&#34; },
+          { year: 2027, date: &#34;2027-02-06&#34; }
+        ];
+        const next = springFestivalDates.find(({ date }) => new Date(date) > this.time);
+        const chineseNewYear = next ? new Date(next.date) : /* @__PURE__ */ new Date(&#34;2026-02-17&#34;);
+        const leftNewyearDay = getDaysLeft(chineseNewYear);
+        const totalDays = getDaysInCurrentYear();
+        this.progressList = [
+          {
+            key: &#34;day&#34;,
+            prog: Math.ceil(dayProgress),
+            text: render(shows2.today, { hours, minutes, seconds: `${seconds < 10 ? &#34;0&#34; : &#34;&#34;}${seconds}` })
+          },
+          {
+            key: &#34;week&#34;,
+            prog: Math.ceil((7 - leftWeekDay) / 7 * 100),
+            text: render(shows2.week, { days: leftWeekDay })
+          },
+          {
+            key: &#34;month&#34;,
+            prog: Math.ceil(100 - leftMonthDay / monthEnd.getDate() * 100),
+            text: render(shows2.month, { days: leftMonthDay })
+          },
+          {
+            key: &#34;year&#34;,
+            prog: Math.ceil(100 - leftYearDay / getDaysInCurrentYear() * 100),
+            text: render(shows2.year, { days: leftYearDay })
+          },
+          {
+            key: &#34;newyear&#34;,
+            prog: Math.ceil((totalDays - leftNewyearDay) / totalDays * 100),
+            text: render(shows2.newyear, { days: leftNewyearDay })
+          }
+        ];
+      }
+    };
+  })({&#34;title&#34;:&#34;Life Countdown&#34;,&#34;today&#34;:&#34;Remaining today: {{hours}}h {{minutes}}m {{seconds}}s&#34;,&#34;week&#34;:&#34;Remaining this week: {{days}} days&#34;,&#34;month&#34;:&#34;Remaining this month: {{days}} days&#34;,&#34;year&#34;:&#34;Remaining this year: {{days}} days&#34;,&#34;newyear&#34;:&#34;Days to CNY: {{days}} days&#34;})" x-init="init()" class> <!-- 遍历进度条 --> <template x-for="item in progressList" :key="item.key"> <div> <div class="flex justify-between shadow-[0_-1px_0px_0px_rgba(0,0,0,0.1)] pt-2"> <span x-text="item.text" class="truncate"></span> <span x-text="item.prog + '%'"></span> </div> <progress class="progress w-full my-1" :value="item.prog" max="100"></progress> </div> </template> </div>  </div> </section> </div> </section>  <footer class="bg-unset text-center py-12"> <div class="max-w-4xl mx-auto px-4"> <p class="mb-2"> <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener noreferrer">ICP License No. Shanghai 2022020686</a> <span>&copy; 2025 <a href="https://howduudu.tech">HOWDUUDU</a>. All rights reserved.</span> </p> <div class="space-x-4 text-sm"> <a href="/en/" class="hover:text-accent transition-colors">Home</a><a href="/en/posts/1/" class="hover:text-accent transition-colors">Posts</a><a href="/en/archive/" class="hover:text-accent transition-colors">Archive</a><a href="/en/tags/Python/" class="hover:text-accent transition-colors">Tags</a><a href="mailto:it17621000@163.com" class="hover:text-accent transition-colors">Contact</a> </div> </div> </footer>   <script type="module" src="/_astro/BrakePad.astro_astro_type_script_index_0_lang.Dxe5aJbf.js"></script> <div class="sr-only"> <div id="bp-default" class="block sm:hidden">default</div> <div id="bp-sm" class="hidden sm:block md:hidden">sm</div> <div id="bp-md" class="hidden md:block lg:hidden">md</div> <div id="bp-lg" class="hidden lg:block xl:hidden">lg</div> <div id="bp-xl" class="hidden xl:block 2xl:hidden">xl</div> <div id="bp-2xl" class="hidden 2xl:block">2xl</div> </div> <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script> </body> </html>
