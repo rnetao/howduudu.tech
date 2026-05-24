@@ -3,6 +3,7 @@ import logging
 import sentry_sdk
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from src.api import routes
 from src.core.config import settings
@@ -25,6 +26,12 @@ app = FastAPI(
     version=settings.VERSION,
     openapi_url=f"/{settings.VERSION}/openapi.json",
     openapi_tags=tags_metadata,
+)
+
+app.mount(
+    "/pdf",
+    StaticFiles(directory="/code/pdf"),
+    name="pdf"
 )
 
 

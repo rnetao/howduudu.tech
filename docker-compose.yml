@@ -43,3 +43,5 @@ services:
       - ./backend/tests:/code/tests
       - ./backend/alembic.ini:/code/alembic.ini
       - ./backend/logconfig.yml:/code/logconfig.yml
+      # - /data/pdf:/code/pdf
+      - /Users/rnet/顺腾/海运周报:/code/pdf
