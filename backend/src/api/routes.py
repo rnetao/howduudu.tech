@@ -13,4 +13,4 @@ def home() -> Response:
 
 
 api_router = APIRouter()
-api_router.include_router(health.router)
+api_router.include_router(health.router, prefix="/api")
