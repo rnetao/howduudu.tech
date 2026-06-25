@@ -1,5 +1,5 @@
 {
-  "name": "SUNTOP（上海顺腾国际）",
+  "name": "CENTEN VIM（顺腾国际 VIM）",
   "icons": [
     {
       "src": "public/favicon/favicon-180x180.png",
@@ -17,8 +17,8 @@
       "type": "image/png"
     }
   ],
-  "short_name": "HDUD",
-  "description": "美国服装海运DDP/LDP",
+  "short_name": "SUNTOP",
+  "description": "美国服装海运DDP/LDP,顺腾国际,美线DDP",
   "lang": "zh-CN",
   "start_url": "/",
   "theme_color": "#fdfaf6",

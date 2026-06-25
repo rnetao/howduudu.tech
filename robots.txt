@@ -4,4 +4,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://sitestar.howduudu.tech/sitemap-index.xml
+Sitemap: https://vim.sh-sun.top/sitemap-index.xml
