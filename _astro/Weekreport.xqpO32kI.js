@@ -1,0 +1,16 @@
+import{j as e}from"./jsx-runtime.D_zvdyIk.js";import"./index.CGj_12n1.js";import{B as d}from"./button.Bo8KW9XE.js";import{c as t,e as i,d as l,f as n,g as o,h as p}from"./dialog.BHMhsA4H.js";import{c as r}from"./createLucideIcon.BAryGcec.js";import"./index.DpOiFsFP.js";import"./index.BYTYdgnZ.js";/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const f=[["rect",{width:"18",height:"18",x:"3",y:"4",rx:"2",key:"1hopcy"}],["path",{d:"M16 2v4",key:"4m81vk"}],["path",{d:"M3 10h18",key:"8toen8"}],["path",{d:"M8 2v4",key:"1cmpym"}],["path",{d:"M17 14h-6",key:"bkmgh3"}],["path",{d:"M13 18H7",key:"bb0bb7"}],["path",{d:"M7 14h.01",key:"1qa3f1"}],["path",{d:"M17 18h.01",key:"1bdyru"}]],x=r("calendar-range",f);/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const h=[["line",{x1:"12",x2:"12",y1:"20",y2:"10",key:"1vz5eb"}],["line",{x1:"18",x2:"18",y1:"20",y2:"4",key:"cun8e5"}],["line",{x1:"6",x2:"6",y1:"20",y2:"16",key:"hq0ia6"}]],m=r("chart-no-axes-column-increasing",h);/**
+ * @license lucide-react v0.536.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const W=[["circle",{cx:"12",cy:"12",r:"1",key:"41hilf"}],["circle",{cx:"19",cy:"12",r:"1",key:"1wjl8i"}],["circle",{cx:"5",cy:"12",r:"1",key:"1pcz8c"}]],a=r("ellipsis",W),y=["海运价格周报-26-W46（中文版）.pdf","海运价格周报-26-W44（中文版）.pdf","海运价格月报-26-M10（中文版）.pdf","海运价格周报-26-W43（中文版）.pdf","海运价格周报-26-W42（中文版）.pdf","海运价格周报-26-W41（中文版）.pdf","海运价格周报-26-W39（中文版）.pdf","海运价格月报-26-M09（中文版）.pdf","海运价格周报-26-W38（中文版）.pdf","海运价格周报-26-W36（中文版）.pdf","海运价格周报-26-W34（中文版）.pdf","海运价格周报-26-W32（中文版）.pdf","海运价格周报-26-W31（中文版）.pdf","海运价格周报-26-W28（中文版）.pdf","海运价格周报-26-W27（中文版）.pdf","海运价格周报-26-W25（中文版）.pdf","海运价格周报-26-W24（中文版）.pdf","海运价格周报-26-W23（中文版）.pdf","海运价格周报-26-W22（中文版）.pdf","海运价格周报-26-W21（中文版）.pdf","海运价格周报-26-W20（中文版）.pdf","海运价格周报-26-W19（中文版）.pdf","海运价格周报-26-W18（中文版）.pdf","海运价格周报-26-W17（中文版）.pdf","海运价格周报-26-W16（中文版）.pdf","海运价格周报-26-W15（中文版）.pdf","海运价格周报-26-W14（中文版）.pdf","海运价格周报-26-W13（中文版）.pdf","海运价格周报-26-W12（中文版）.pdf","海运价格周报-26-W11（中文版）.pdf","海运价格周报-26-W10（中文版）.pdf","海运价格周报-25-W41（中文版）.pdf"];function v({btn:c}){return e.jsxs(t,{children:[e.jsx(i,{children:e.jsxs(d,{variant:"ghost",className:"absolute left-1/2 -translate-x-1/2 bottom-[-2rem] flex text-sm items-center",children:[e.jsx(a,{className:"w-8 h-8"}),c,e.jsx(a,{className:"w-8 h-8"})]})}),e.jsxs(l,{children:[e.jsxs(n,{children:[e.jsx(o,{children:"顺腾国际海运价格周报"}),e.jsx(p,{children:"我司统一制作，周报按周更新，月报按月更新，包括船司HEDE、MATSON、COSCO、ZIM价格，最终解释权归顺腾国际所有!"})]}),e.jsx("div",{className:"-mx-4 no-scrollbar max-h-[50vh] overflow-y-auto px-4",children:e.jsx("ul",{class:"relative mt-5 grid sm:grid-cols-1 gap-8",children:y.map(s=>e.jsx("li",{class:"text-center",children:e.jsxs("a",{href:`/海运周报/${s}`,target:"_blank",rel:"noopener noreferrer",className:"text-blue-500 hover:underline flex items-center justify-center gap-2",children:[s.includes("月报")?e.jsx(m,{className:"inline-block"}):e.jsx(x,{className:"inline-block"}),s]})}))})})]})]})}export{v as default};
